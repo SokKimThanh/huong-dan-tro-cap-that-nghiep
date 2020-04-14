@@ -13,27 +13,20 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
+
   <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
   <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+  <script src="lib/jquery/dist/jquery.min.js"></script>
   <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Font Awesome JS -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-    crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-    crossorigin="anonymous"></script>
-
 </head>
 
 <body>
   <ul class="menu">
     <li><a href="#!/view1">Trợ cấp thất nghiệp</a></li>
     <li><a href="#!/view2">Việc cần làm trong 60 ngày</a></li>
-    <li><a href="#!/hoc-tieng-anh-1000-tu-khong-can-co-gang">Học tiếng anh</a></li>
   </ul>
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -48,10 +41,16 @@
   -->
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
   <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="english/english1000wordsnoneedgambare.js"></script>
+  <script src="view2/view2.module.js"></script>
+  <script src="view2/view2.controller.js"></script>
+  <script src="view2/view2.config.js"></script>
+  <script src="setting/hoc-1000-tu-tieng-anh-khong-can-co-gang/learning-english.module.js"></script>
+  <script src="setting/hoc-1000-tu-tieng-anh-khong-can-co-gang/learning-english.controller.js"></script>
+  <script src="setting/giam-can-trong-60-days/loose-weight.module.js"></script>
+  <script src="setting/giam-can-trong-60-days/loose-weight.component.js"></script>
   <script src="core/version/version.js"></script>
   <script src="core/version/version-directive.js"></script>
   <script src="core/version/interpolate-filter.js"></script>
