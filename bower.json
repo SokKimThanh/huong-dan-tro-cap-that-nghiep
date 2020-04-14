@@ -1,0 +1,20 @@
+{
+  "name": "angular-seed",
+  "description": "A starter project for AngularJS",
+  "main": "",
+  "authors": [
+    "Sok Kim Thanh <thanhsk1991@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/SokKimThanh/huong-dan-tro-cap-that-nghiep",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-css": "^1.0.8"
+  }
+}

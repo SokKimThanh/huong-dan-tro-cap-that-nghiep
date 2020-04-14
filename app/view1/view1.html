@@ -1,17 +1,17 @@
-<div class="container-fluid">
+<div class="jumbotron text-center">
     <h1>Quy trình làm thủ tục trợ cấp thất nghiệp</h1>
-    <ul class="list-group">
-        <li class="list-group-item"><a href="#!/hoi-ve-dieu-kien-tro-cap-that-nghiep"></a>Hỏi về điều kiện trợ
-            cấp
-            thất
-            nghiệp
-        </li>
-        <li class="list-group-item"><a href="#!/cac-dk-tro-cap-that-nghiep"></a>Các điều kiện trợ cấp thất
-            nghiệp
-        </li>
-        <li class="list-group-item"><a href="#!/hoi-ve-quyet-toan-bao-hiem-xa-hoi"></a>Hỏi về quyết toán bảo
-            hiểm xã
-            hội
-        </li>
-    </ul>
+    <p>Hướng dẫn quy trình và thủ tục lấy tiền trợ cấp thất nghiệp</p>
+</div>
+
+<div class="container-fluid" ng-controller="View1Ctrl">
+    <div class="row">
+        <div class="col-sm-6" ng-repeat="item in disWork">
+            <h3>{{item.title}}</h3>
+            <p>
+                {{item.description}}
+                <a ng-href="{{item.href}}" class="btn btn-info" role="button">Xem chi tiết</a>
+            </p>
+            <img ng-src="{{item.src}}" alt="{{item.alt}}" ng-class="item.imgClass">
+        </div>
+    </div>
 </div>
