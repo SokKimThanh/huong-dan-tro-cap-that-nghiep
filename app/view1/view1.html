@@ -7,10 +7,13 @@
     <div class="row">
         <div class="col-sm-6" ng-repeat="item in disWork">
             <h3 class="base-class" ng-class="myVar" ng-mouseover="myVar='my-class'" ng-init="myVar=''"
-                ng-mouseleave="myVar=''"><a ng-href=" {{item.href}}">{{item.title}}</a>
+                ng-mouseleave="myVar=''"><a ng-href="{{item.href}}">{{item.title}}</a>
             </h3>
             <p>{{item.description}} </p>
-            <img ng-src="{{item.src}}" alt="{{item.alt}}" ng-class="item.imgClass">
+
+            <a ng-href="{{item.href}}"><img ng-mouseover="imgShadowVar='imgShadow'" ng-init="imgShadowVar=''"
+                    ng-mouseleave="imgShadowVar=''" ng-src="{{item.src}}" alt="{{item.alt}}"
+                    ng-class="item.imgClass"></a>
         </div>
     </div>
 </div>
