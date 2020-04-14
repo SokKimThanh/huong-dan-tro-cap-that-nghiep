@@ -6,3 +6,18 @@
     color: red;
     font-size:3em;
   }
+  .base-class.my-class a:link {
+    text-decoration: none;
+  }
+  
+  .base-class.my-class a:visited {
+    text-decoration: none;
+  }
+  
+  .base-class.my-class a:hover {
+    text-decoration: none;
+  }
+  
+  .base-class.my-class a:active {
+    text-decoration: none;
+  }

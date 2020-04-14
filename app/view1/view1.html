@@ -4,17 +4,12 @@
 </div>
 
 <div class="container-fluid" ng-controller="View1Ctrl">
-    <input id="setbtn" type="button" value="set" ng-click="myVar='my-class'">
-    <input id="clearbtn" type="button" value="clear" ng-click="myVar=''">
-    <br>
-    <span class="base-class" ng-class="myVar">Sample Text</span>
     <div class="row">
         <div class="col-sm-6" ng-repeat="item in disWork">
-            <h3>{{item.title}}</h3>
-            <p>
-                {{item.description}}
-                <a ng-href="{{item.href}}" class="btn btn-info base-class" role="button">Xem chi tiết</a>
-            </p>
+            <h3 class="base-class" ng-class="myVar" ng-mouseover="myVar='my-class'" ng-init="myVar=''"
+                ng-mouseleave="myVar=''"><a ng-href=" {{item.href}}">{{item.title}}</a>
+            </h3>
+            <p>{{item.description}} </p>
             <img ng-src="{{item.src}}" alt="{{item.alt}}" ng-class="item.imgClass">
         </div>
     </div>

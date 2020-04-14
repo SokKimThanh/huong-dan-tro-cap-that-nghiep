@@ -1,5 +1,3 @@
-'use strict';
-angular.module('myApp.view1').controller('View1Ctrl', ['$scope', View1Ctrl]);
 function View1Ctrl($scope) {
     $scope.disWork = [
         {
