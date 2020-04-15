@@ -6,5 +6,7 @@ angular.module('myApp', [
     'angularCSS',
     'myApp.view1',
     'myApp.view2',
+    'myApp.aboutMe',
+    'myApp.learningSummary',
     'myApp.version',
 ])
