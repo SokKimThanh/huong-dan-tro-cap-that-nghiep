@@ -1,39 +1,47 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html lang="en" ng-app="myApp" class="no-js">
-<!--<![endif]-->
 
 <head>
+  <title>Bootstrap 4 Website Example</title>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
-
-  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css">
-  <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
-  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
-  <script src="lib/jquery/dist/jquery.min.js"></script>
-  <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .fakeimg {
+      height: 200px;
+      background: #aaa;
+    }
+  </style>
 </head>
 
 <body>
-  <ul class="menu">
-    <li><a href="#!/view1">Trợ cấp thất nghiệp</a></li>
-    <li><a href="#!/view2">Việc cần làm trong 60 ngày</a></li>
-  </ul>
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>{{myapp.title}}</h1>
+    <p>{{myapp.description}}</p>
+  </div>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">SKT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#!/thong-tin-cua-toi">Thông tin của tôi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#!/view1">Trợ cấp thất nghiệp</a></li>
+        <li class="nav-item"><a class="nav-link" href="#!/view2">Việc cần làm trong 60 ngày</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <div ng-view></div>
 
-  <div>AngularJS seed app: v<span app-version></span></div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <p>AngularJS seed app: v<span app-version></span></p>
+  </div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -58,7 +66,6 @@
   <script src="core/version/version.js"></script>
   <script src="core/version/version-directive.js"></script>
   <script src="core/version/interpolate-filter.js"></script>
-
 </body>
 
 </html>

@@ -1,11 +1,6 @@
-<div class="jumbotron text-center">
-    <h1>Quy trình làm thủ tục trợ cấp thất nghiệp</h1>
-    <p>Hướng dẫn quy trình và thủ tục lấy tiền trợ cấp thất nghiệp</p>
-</div>
-
 <div class="container-fluid" ng-controller="View1Ctrl">
     <div class="row">
-        <div class="col-sm-6" ng-repeat="item in disWork">
+        <div class="col" ng-repeat="item in disWork">
             <h3 class="base-class" ng-class="myVar" ng-mouseover="myVar='my-class'" ng-init="myVar=''"
                 ng-mouseleave="myVar=''"><a ng-href="{{item.href}}">{{item.title}}</a>
             </h3>
