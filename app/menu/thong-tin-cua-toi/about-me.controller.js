@@ -1,7 +1,7 @@
 'use strict';
 angular.module('myApp.aboutMe').controller('AboutMeCtrl', ['$http', '$scope', '$rootScope', 'aboutMeFactory', AboutMeCtrl]);
 function AboutMeCtrl($http, $scope, $rootScope, aboutMeFactory) {
-    $scope.myapp = {
+    $rootScope.myapp = {
         title: "Sok Kim Thanh",
         description: "Javascript framework Front-End AngularJS Developer",
     };
