@@ -1,16 +1,38 @@
 [
     {
-        "title_heading": "wahsis pms",
-        "title_description": "các chức năng đã làm trong dự án",
-        "title_from_time": "11/9/2017",
-        "title_to_time": "11/9/2018",
-        "title_image": [
+        "exp_heading_title": "wahsis pms",
+        "exp_description": "các chức năng đã làm trong dự án",
+        "exp_from_time": "2017-9-11",
+        "exp_to_time": "2019-9-11",
+        "slider_image": [
             {
-                "url": "",
-                "caption": "",
-                "svg": ""
+                "caption": "Kinh nghiệm sử dụng ai vẽ sơ đồ tầng",
+                "url": "menu/thong-tin-cua-toi/img/sodotang.png",
+                "src": "menu/thong-tin-cua-toi/img/sodotang.png",
+                "svg": "menu/thong-tin-cua-toi/img/sodotang.png",
+                "type": "",
+                "active": true
             }
         ],
-        "title_fulltext": ""
+        "exp_min_text": "",
+        "exp_max_text": ""
+    },
+    {
+        "exp_heading_title": "wahsis sms",
+        "exp_description": "các chức năng đã làm trong dự án",
+        "exp_from_time": "2017-9-11",
+        "exp_to_time": "2019-9-11",
+        "slider_image": [
+            {
+                "caption": "Hình AI",
+                "url": "menu/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
+                "src": "menu/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
+                "svg": "menu/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
+                "type": "",
+                "active": true
+            }
+        ],
+        "exp_min_text": "",
+        "exp_max_text": ""
     }
 ]

@@ -15,7 +15,14 @@ function AboutMeCtrl($http, $scope, $rootScope, aboutMeFactory) {
 
     /* experience */
     aboutMeFactory.get_json('menu/thong-tin-cua-toi/json/experiance_list.json').then(function success(response) {
-        $scope.experience = response.data;
+        $scope.experiences = response.data;
+        for (var x in $scope.experiences) {
+            var e = $scope.experiences[x];
+            var exp_to_time = e.exp_to_time.split('-');
+            var exp_from_time = e.exp_from_time.split('-');
+            e.exp_to_time = new Date(exp_to_time[0], exp_to_time[1], exp_to_time[2]).toDateString();
+            e.exp_from_time = new Date(exp_from_time[0], exp_from_time[1], exp_from_time[2]).toDateString();
+        }
     });
 
     /* skills */

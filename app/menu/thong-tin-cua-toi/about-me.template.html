@@ -1,9 +1,9 @@
 <div class="container" style="margin-top:30px" ng-controller='AboutMeCtrl'>
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-md-4 col-lg-4">
             <h2>About Me</h2>
             <h5>Photo of me:</h5>
-            <flex-slider ng-controller="BasicSliderCtrl" slide="s in slideshow.slides track by $index"
+            <flex-slider ng-controller="BasicSliderCtrl" slide="s in slideshow.about_me_slides track by $index"
                 animation="slide">
                 <li>
                     <img ng-show="{{s.active}}" ng-src="{{s.src}}">
@@ -28,22 +28,19 @@
             </ul>
             <hr class="d-sm-none">
         </div>
-        <div class="col-sm-8">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg">Fake Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco.</p>
-            <br>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg">Fake Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco.</p>
+        <div class="col-sm-8 col-md-8 col-lg-8">
+            <ul class="group-item" ng-repeat="exp in experiences">
+                <li class="group-item-list">
+                    <h2>{{exp.exp_heading_title| uppercase}}</h2>
+                    <h5>{{exp.exp_description}}, {{exp.exp_from_date|date}}</h5>
+                    <div ng-repeat="image in exp.slider_image">
+                        <img class="img-responsive" ng-src="{{image.src}}" alt="{{image.caption}}">
+                    </div>
+                    <p>{{exp.exp_min_text}}</p>
+                    <p>{{exp.exp_max_text}}</p>
+                    <br>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
