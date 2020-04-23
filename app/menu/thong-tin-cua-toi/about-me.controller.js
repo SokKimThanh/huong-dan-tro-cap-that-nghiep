@@ -4,6 +4,7 @@ function AboutMeCtrl($http, $scope, $rootScope, aboutMeFactory) {
     $rootScope.myapp = {
         title: "Sok Kim Thanh",
         description: "Javascript framework Front-End AngularJS Developer",
+        href: "#aboutme",
     };
     /* about me */
     aboutMeFactory.get_json('menu/thong-tin-cua-toi/json/about_me.json').then(function success(response) {
