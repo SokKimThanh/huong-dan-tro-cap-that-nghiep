@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="lib/angular-flexslider/bower_components/flexslider/flexslider.css">
+  <link rel="stylesheet" href="app.animation.css">
 
   <script src="lib/jquery/dist/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -20,11 +21,6 @@
 </head>
 
 <body>
-
-  <div class="jumbotron text-center" style="margin-bottom:0">
-    <h1>{{myapp.title}}</h1>
-    <p>{{myapp.description}}</p>
-  </div>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <a class="navbar-brand" href="#">SKT</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -32,16 +28,22 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#!/thong-tin-cua-toi">Thông tin của tôi</a></li>
-        <li class="nav-item"><a class="nav-link" href="#!/view1">Trợ cấp thất nghiệp</a></li>
-        <li class="nav-item"><a class="nav-link" href="#!/view2">Việc cần làm trong 60 ngày</a></li>
-        <li class="nav-item"><a class="nav-link" href="#!/tong-hop-kien-thuc-da-hoc">Tổng hợp kiến thức đã học</a></li>
+        <li class="nav-item phone-list-item"><a class="nav-link" href="#!/thong-tin-cua-toi">Thông tin
+            của tôi</a></li>
+        <li class="nav-item phone-list-item"><a class="nav-link" href="#!/view1">Trợ cấp thất nghiệp</a></li>
+        <li class="nav-item phone-list-item"><a class="nav-link" href="#!/view2">Việc cần làm trong 60 ngày</a></li>
+        <li class="nav-item phone-list-item"><a class="nav-link" href="#!/tong-hop-kien-thuc-da-hoc">Tổng hợp kiến thức
+            đã học</a></li>
       </ul>
     </div>
   </nav>
-
-  <div ng-view></div>
-
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>{{myapp.title}}</h1>
+    <p>{{myapp.description}}</p>
+  </div>
+  <div class="view-container">
+    <div ng-view class="view-frame"></div>
+  </div>
   <div class="jumbotron text-center" style="margin-bottom:0">
     <p>AngularJS seed app: v<span app-version></span></p>
   </div>
@@ -52,9 +54,9 @@
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
   <script src="lib/angular-css/angular-css.min.js"></script>
-
   <script src="lib/angular-flexslider/bower_components/flexslider/jquery.flexslider.js"></script>
   <script src="lib/angular-flexslider/angular-flexslider.js"></script>
+  <script src="lib/angular-animate/angular-animate.min.js"></script>
   <script src="app.module.js"></script>
   <script src="app.config.js"></script>
   <script src="app.filter.js"></script>
