@@ -6,7 +6,7 @@
             <flex-slider ng-controller="BasicSliderCtrl" slide="s in slideshow.slides track by $index"
                 animation="slide">
                 <li>
-                    <img ng-show="s.active" ng-src="{{s.src}}">
+                    <img ng-show="{{s.active}}" ng-src="{{s.src}}">
                 </li>
             </flex-slider>
             <p>{{about_me.description}}</p>

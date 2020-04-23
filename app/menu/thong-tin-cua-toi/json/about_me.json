@@ -6,7 +6,7 @@
             "src": "menu/thong-tin-cua-toi/img/0A092C73-7D82-4AB7-B986-6A7A56EC76B1.jpg",
             "svg": "",
             "type": "",
-            "active": true
+            "active": false
         },
         {
             "caption": "Hình AI",
@@ -15,6 +15,14 @@
             "svg": "",
             "type": "",
             "active": false
+        },
+        {
+            "caption": "sokkimthanh cv photo",
+            "url": "menu/thong-tin-cua-toi/img/Sok-Kim-Thanh-CV-photo.JPG",
+            "src": "menu/thong-tin-cua-toi/img/Sok-Kim-Thanh-CV-photo.JPG",
+            "svg": "menu/thong-tin-cua-toi/img/Sok-Kim-Thanh-CV-photo.JPG",
+            "type": "",
+            "active": true
         },
         {
             "caption": "Thông tin của thanh",
@@ -30,7 +38,7 @@
             "src": "menu/thong-tin-cua-toi/img/wahsis.jpg",
             "svg": "menu/thong-tin-cua-toi/img/wahsis.jpg",
             "type": "",
-            "active": true
+            "active": false
         }
     ],
     "introduce": [
