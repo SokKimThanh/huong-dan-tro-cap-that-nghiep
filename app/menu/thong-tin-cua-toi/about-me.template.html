@@ -29,12 +29,19 @@
             <hr class="d-sm-none">
         </div>
         <div class="col-sm-8 col-md-8 col-lg-8">
-            <ul class="group-item" ng-repeat="exp in experiences">
-                <li class="group-item-list">
+            <ul class="list-group" ng-repeat="exp in experiences">
+                <li class="list-group-item">
                     <h2>{{exp.exp_heading_title| uppercase}}</h2>
-                    <h5>{{exp.exp_description}}, {{exp.exp_from_date|date}}</h5>
-                    <div ng-repeat="image in exp.slider_image">
-                        <img class="img-responsive" ng-src="{{image.src}}" alt="{{image.caption}}">
+                    <h5>{{exp.exp_description}}, {{exp.exp_from_time|date}} - {{exp.exp_to_time|date}}</h5>
+                    <div class="col-md-12" ng-repeat="image in exp.slider_image">
+                        <div class="thumbnail">
+                            <a ng-href="{{image.href}}">
+                                <img ng-src="{{image.src}}" alt="{{image.alt}}" style="width:100%">
+                                <div class="caption">
+                                    <p>{{image.caption}}</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <p>{{exp.exp_min_text}}</p>
                     <p>{{exp.exp_max_text}}</p>
