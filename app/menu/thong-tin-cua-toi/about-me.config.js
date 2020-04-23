@@ -7,4 +7,4 @@ angular.module('myApp.aboutMe')
             controller: 'AboutMeCtrl',
             css: "menu/thong-tin-cua-toi/about-me.css"
         });
-    }])
+    }]);

@@ -1,3 +1,6 @@
+'use strict';
+
+angular.module('myApp.learningSummary').controller('LearningSummaryCtrl', ['$scope', '$rootScope', LearningSummaryCtrl]);
 function LearningSummaryCtrl($scope, $rootScope) {
     $rootScope.myapp = {
         title: "Kiến thức tổng hợp",

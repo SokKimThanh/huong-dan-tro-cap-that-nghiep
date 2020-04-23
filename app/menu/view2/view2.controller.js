@@ -1,6 +1,6 @@
 
 'use strict';
-
+angular.module('myApp.view2').controller('View2Ctrl', ['$scope', '$rootScope', View2Ctrl]);
 function View2Ctrl($scope, $rootScope) {
     $rootScope.myapp = {
         title: "Việc cần làm trong 60 ngày",

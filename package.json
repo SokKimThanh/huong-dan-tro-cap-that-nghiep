@@ -9,6 +9,7 @@
     "angular": "^1.7.9",
     "angular-animate": "^1.7.9",
     "angular-css": "^1.0.8",
+    "angular-flexslider": "^1.3.3",
     "angular-loader": "^1.7.9",
     "angular-route": "^1.7.9",
     "bootstrap": "^4.4.1",
