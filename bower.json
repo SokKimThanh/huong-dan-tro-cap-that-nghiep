@@ -16,5 +16,13 @@
   ],
   "dependencies": {
     "angular-css": "^1.0.8"
+  },
+  "directory": "app/components/",
+  "timeout": 120000,
+  "registry": {
+    "search": [
+      "http://localhost:8000",
+      "https://registry.bower.io"
+    ]
   }
 }
