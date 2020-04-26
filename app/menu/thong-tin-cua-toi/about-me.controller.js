@@ -34,5 +34,4 @@ function AboutMeCtrl($http, $scope, $rootScope, aboutMeFactory) {
     aboutMeFactory.get_json('menu/thong-tin-cua-toi/json/projects.json').then(function success(response) {
         $scope.projects_list = response.data;
     });
-
 }

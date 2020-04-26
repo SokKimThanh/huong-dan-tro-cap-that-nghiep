@@ -15,7 +15,10 @@
             }
         ],
         "exp_min_text": "Xem chi tiết",
-        "exp_max_text": "Xem video hướng dẫn"
+        "exp_max_text": "Xem video hướng dẫn",
+        "exp_href": "https://youtu.be/lDuXmPvJlnE",
+        "active_exp_min_text": true,
+        "active_exp_max_text": true
     },
     {
         "exp_heading_title": "Dùng AI để vẽ polygon",
@@ -33,6 +36,30 @@
             }
         ],
         "exp_min_text": "Xem chi tiết",
-        "exp_max_text": "Xem video hướng dẫn"
+        "exp_max_text": "Xem video hướng dẫn",
+        "exp_href": "https://youtu.be/lDuXmPvJlnE",
+        "active_exp_min_text": true,
+        "active_exp_max_text": true
+    },
+    {
+        "exp_heading_title": "Chơi đàn piano",
+        "exp_description": "Kỹ năng sử dụng bàn phím",
+        "exp_from_time": "2017-9-11",
+        "exp_to_time": "2020-4-26",
+        "slider_image": [
+            {
+                "caption": "Hình nhỏ chơi piano bằng bàn phím.",
+                "url": "menu/thong-tin-cua-toi/img/piano.jpg",
+                "src": "menu/thong-tin-cua-toi/img/piano.jpg",
+                "svg": "menu/thong-tin-cua-toi/img/piano.jpg",
+                "type": "",
+                "active": true
+            }
+        ],
+        "exp_min_text": "Xem chi tiết",
+        "exp_max_text": "Xem video hướng dẫn",
+        "exp_href": "https://youtu.be/Ze0GkGd4ZcY",
+        "active_exp_min_text": true,
+        "active_exp_max_text": true
     }
 ]
