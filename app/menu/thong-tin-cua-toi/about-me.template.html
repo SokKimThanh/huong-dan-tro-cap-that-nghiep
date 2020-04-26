@@ -29,25 +29,51 @@
             <hr class="d-sm-none">
         </div>
         <div class="col-sm-8 col-md-8 col-lg-8">
-            <ul class="list-group" ng-repeat="exp in experiences">
-                <li class="list-group-item">
-                    <h2>{{exp.exp_heading_title| uppercase}}</h2>
-                    <h5>{{exp.exp_description}}, {{exp.exp_from_time|date}} - {{exp.exp_to_time|date}}</h5>
-                    <div class="col-md-12" ng-repeat="image in exp.slider_image">
-                        <div class="thumbnail">
-                            <a ng-href="{{image.href}}">
-                                <img ng-src="{{image.src}}" alt="{{image.alt}}" style="width:100%">
-                                <div class="caption">
-                                    <p>{{image.caption}}</p>
+            <div class="row">
+                <div class="col-6">
+                    <p>
+                        Search:
+                        <input type="text" ng-model="query" class="form-control">
+                    </p>
+                </div>
+                <div class="col-6">
+                    <p>
+                        Sort by:
+                        <select ng-model="orderProp" class="form-control">
+                            <option value="exp_heading_title">Alphabetical</option>
+                            <option value="exp_to_time">Newest</option>
+                            <option value="exp_from_time">Oldest</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="list-group" ng-repeat="exp in experiences | filter: query | orderBy: orderProp">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <div ng-repeat="image in exp.slider_image">
+                                    <div class="thumbnail">
+                                        <a class="phone-list-item" ng-href="{{image.href}}">
+                                            <img ng-src="{{image.src}}" alt="{{image.alt}}" class="img-thumbnail">
+                                        </a>
+                                    </div>
                                 </div>
-                            </a>
+                            </div>
+                            <div class="col-7">
+                                <a>
+                                    <h2>{{exp.exp_heading_title| uppercase}}</h2>
+                                    <h5>{{exp.exp_description}}</h5>
+                                    <h6>{{exp.exp_from_time|date}} - {{exp.exp_to_time|date}}</h6>
+                                    <p>{{exp.exp_min_text}}</p>
+                                    <p>{{exp.exp_max_text}}</p>
+                                    <br>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <p>{{exp.exp_min_text}}</p>
-                    <p>{{exp.exp_max_text}}</p>
-                    <br>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

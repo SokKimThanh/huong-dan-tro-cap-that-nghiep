@@ -1,7 +1,7 @@
 [
     {
-        "exp_heading_title": "wahsis pms",
-        "exp_description": "các chức năng đã làm trong dự án",
+        "exp_heading_title": "Gắn SVG vào trong flexbox",
+        "exp_description": "Chức năng flexbox",
         "exp_from_time": "2017-9-11",
         "exp_to_time": "2019-9-11",
         "slider_image": [
@@ -14,12 +14,12 @@
                 "active": true
             }
         ],
-        "exp_min_text": "",
-        "exp_max_text": ""
+        "exp_min_text": "Xem chi tiết",
+        "exp_max_text": "Xem video hướng dẫn"
     },
     {
-        "exp_heading_title": "wahsis sms",
-        "exp_description": "các chức năng đã làm trong dự án",
+        "exp_heading_title": "Dùng AI để vẽ polygon",
+        "exp_description": "Kỹ năng sử dụng AI và PHOTOSHOP",
         "exp_from_time": "2017-9-11",
         "exp_to_time": "2019-9-11",
         "slider_image": [
@@ -32,7 +32,7 @@
                 "active": true
             }
         ],
-        "exp_min_text": "",
-        "exp_max_text": ""
+        "exp_min_text": "Xem chi tiết",
+        "exp_max_text": "Xem video hướng dẫn"
     }
 ]

@@ -29,4 +29,5 @@ function AboutMeCtrl($http, $scope, $rootScope, aboutMeFactory) {
     aboutMeFactory.get_json('menu/thong-tin-cua-toi/json/skills_list.json').then(function success(response) {
         $scope.skills = response.data;
     });
+    $scope.orderProp = 'exp_to_time';
 }
