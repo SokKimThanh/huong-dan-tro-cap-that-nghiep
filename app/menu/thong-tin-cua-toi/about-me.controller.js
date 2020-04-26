@@ -30,4 +30,9 @@ function AboutMeCtrl($http, $scope, $rootScope, aboutMeFactory) {
         $scope.skills = response.data;
     });
     $scope.orderProp = 'exp_to_time';
+    /* projects */
+    aboutMeFactory.get_json('menu/thong-tin-cua-toi/json/projects.json').then(function success(response) {
+        $scope.projects_list = response.data;
+    });
+
 }
