@@ -1,10 +1,15 @@
 'use strict';
-angular.module('myApp')
-    .controller('myAppController', ['$rootScope', '$anchorScroll', '$location', '$scope', myAppController])
+let myApp = angular.module('myApp');
+let ctrl = myApp.controller('myAppController', ['$rootScope', '$anchorScroll', '$location', '$scope', '$http', myAppController])
     .run(['$anchorScroll', function ($anchorScroll) {
         $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
     }]);
-function myAppController($rootScope, $anchorScroll, $location, $scope) {
+ctrl.filter('capitalize', function () {
+    return function (input) {
+        return (angular.isString(input) && input.length > 0) ? input.charAt(0).toUpperCase() + input.substr(1).toLowerCase() : input;
+    }
+})
+function myAppController($rootScope, $anchorScroll, $location, $scope, $http) {
     $rootScope.myapp = {
         title: "",
         description: "",
@@ -28,4 +33,4 @@ function myAppController($rootScope, $anchorScroll, $location, $scope) {
         { top_menu_id: 3, top_menu_name: "Việc cần làm trong 60 ngày", href: "#!/view2", class: "nav-item" },
         { top_menu_id: 4, top_menu_name: "Tổng hợp kiến thức đã học", href: "#!/tong-hop-kien-thuc-da-hoc", class: "nav-item" },
     ]
-}
+} 

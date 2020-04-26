@@ -5,6 +5,8 @@
   <title>Bootstrap 4 Website Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="lib/normalize.css/normalize.css">
   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="lib/angular-flexslider/bower_components/flexslider/flexslider.css">
   <link rel="stylesheet" href="app.animation.css">
@@ -12,17 +14,11 @@
   <script src="lib/jquery/dist/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
-
-  <style>
-    .fakeimg {
-      height: 200px;
-      background: #aaa;
-    }
-  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-header" ng-controller="myAppController">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark" ng-controller="myAppController">
     <a class="navbar-brand" href="#">SKT</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -41,10 +37,12 @@
     <div class="text-white text-center rgba-stylish-strong py-5 px-4">
       <div class="py-5">
         <!-- Content -->
-        <h5 class="h5 orange-text"><i class="fas fa-camera-retro"></i>SKT</h5>
-        <h2 class="card-title h2 my-4 py-2">{{myapp.title}}</h2>
-        <p class="mb-4 pb-2 px-md-5 mx-md-5">{{myapp.description}}</p>
-        <a class="btn peach-gradient" ng-href="{{myapp.href}}"><i class="fas fa-clone left"></i>View now</a>
+        <h5 class="h5 orange-text"><i class="fas fa-meteor"></i> SKT</h5>
+        <h2 class="card-title h2 my-4 py-2">{{myapp.title| uppercase}}</h2>
+        <p class="mb-4 pb-2 px-md-5 mx-md-5 text-capitalize">{{myapp.description}}</p>
+        <a class="btn btn-primary text-capitalize" ng-href="{{myapp.href}}"> <i class="fa fa-eye"
+            aria-hidden="true"></i> view now
+        </a>
       </div>
     </div>
   </div>
@@ -52,8 +50,7 @@
     <div ng-view class="view-frame"></div>
   </div>
 
-  <div class="jumbotron text-center" style="margin-bottom:0" ng-include="'menu/index/footer.html'">
-  </div>
+  <footer-detail></footer-detail>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -68,6 +65,7 @@
   <script src="app.controller.js"></script>
   <script src="app.config.js"></script>
   <script src="app.filter.js"></script>
+  <script src="menu/footer/footer.component.js"></script>
   <script src="menu/view1/view1.module.js"></script>
   <script src="menu/view1/view1.controller.js"></script>
   <script src="menu/view1/view1.config.js"></script>

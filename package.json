@@ -6,6 +6,7 @@
   "repository": "https://github.com/SokKimThanh/huong-dan-tro-cap-that-nghiep.git",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "angular": "^1.7.9",
     "angular-animate": "^1.7.9",
     "angular-css": "^1.0.8",
@@ -14,7 +15,8 @@
     "angular-route": "^1.7.9",
     "bootstrap": "^4.4.1",
     "html5-boilerplate": "0.0.1",
-    "jquery": "^3.5.0"
+    "jquery": "^3.5.0",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "angular-mocks": "^1.7.9",
@@ -31,7 +33,7 @@
     "postinstall": "npm run copy-libs",
     "update-deps": "npm update",
     "postupdate-deps": "npm run copy-libs",
-    "copy-libs": "cpx \"node_modules/{angular,angular-*,html5-boilerplate/dist,bootstrap/dist,jquery/dist}/**/*\" app/lib -C",
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,html5-boilerplate/dist,bootstrap/dist,jquery/dist,normalize.css}/**/*\" app/lib -C",
     "prestart": "npm install",
     "start": "http-server -a localhost -p 8000 -c-1 ./app",
     "pretest": "npm install",
