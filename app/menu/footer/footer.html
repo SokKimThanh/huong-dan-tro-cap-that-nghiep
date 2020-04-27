@@ -1,0 +1,34 @@
+<!-- Footer -->
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 footer-about">
+                    <h3>{{myapp.title| uppercase}}</h3>
+                    <p class="text-capitalize">{{myapp.description}}</p>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YY92lC9wDfo?start=1649"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-4 footer-contact">
+                    <h3>Contact</h3>
+                    <ul class="navbar navbar-dark" ng-repeat="contact in myapp.contacts_list">
+                        <li class="navbar-nav">
+                            <p><i class="{{contact.class}}"></i>
+                                <a ng-href="{{contact.src}}" ng-if="contact.type=='map_marker'">{{contact.info}}</a>
+                                <a ng-if="contact.type!='map_marker'">{{contact.info}}</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <pdiv class="footer-copyright">
+                <p><a href="#">{{myapp.title}} Copyright &copy;</a></p>
+            </pdiv>
+        </div>
+    </div>
+</footer>

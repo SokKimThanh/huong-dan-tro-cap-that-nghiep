@@ -44,5 +44,4 @@ angular.module('BasicSlider', ['angular-flexslider'])
                 $scope.slideshow.slides.shift();
             };
         });
-
     });

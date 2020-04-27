@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Tặng thiệp 8-3 QTPN",
+        "href": "",
+        "active": false
+    },
+    {
+        "name": "Tặng thiệp Sinh nhật",
+        "href": "",
+        "active": false
+    },
+    {
+        "name": "Tặng thiệp giáng sinh",
+        "href": "https://sokkimthanh.github.io/ChucMungGiangSinh/",
+        "active": true
+    },
+    {
+        "name": "CV Bản thân",
+        "href": "http://sokkimthanh.herokuapp.com/#!/",
+        "active": true
+    }
+]

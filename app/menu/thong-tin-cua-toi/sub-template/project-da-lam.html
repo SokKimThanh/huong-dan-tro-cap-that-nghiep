@@ -1,0 +1,8 @@
+<h2 class="text-capitalize">Dự án</h2>
+<h5 class="text-capitalize">Một số dự án đã tự làm</h5>
+<ul class="nav nav-pills flex-column" ng-repeat="project in projects_list">
+    <li class="nav-item">
+        <a class="nav-link active" ng-href="{{project.href}}" ng-show="{{project.active}}">{{project.name}}</a>
+    </li>
+</ul>
+<hr class="d-sm-none">

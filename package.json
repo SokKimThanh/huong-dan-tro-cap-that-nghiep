@@ -6,6 +6,7 @@
   "repository": "https://github.com/SokKimThanh/huong-dan-tro-cap-that-nghiep.git",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "angular": "^1.7.9",
     "angular-animate": "^1.7.9",
     "angular-css": "^1.0.8",
@@ -17,7 +18,11 @@
     "grunt-bower": "^0.21.4",
     "html5-boilerplate": "0.0.1",
     "jquery": "^3.5.0",
+<<<<<<< HEAD
     "flexslider": "^2.7.2"
+=======
+    "normalize.css": "^8.0.1"
+>>>>>>> 0cea9e18bbaa60b5a05470716005d095d39cfa99
   },
   "devDependencies": {
     "angular-mocks": "^1.7.9",
@@ -34,7 +39,11 @@
     "postinstall": "npm run copy-libs",
     "update-deps": "npm update",
     "postupdate-deps": "npm run copy-libs",
+<<<<<<< HEAD
     "copy-libs": "cpx \"node_modules/{angular,angular-*,html5-boilerplate/dist,bootstrap/dist,jquery/dist,flexslider}/**/*\" app/lib -C",
+=======
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,html5-boilerplate/dist,bootstrap/dist,jquery/dist,normalize.css}/**/*\" app/lib -C",
+>>>>>>> 0cea9e18bbaa60b5a05470716005d095d39cfa99
     "prestart": "npm install",
     "start": "http-server -a localhost -p 8000 -c-1 ./app",
     "pretest": "npm install",

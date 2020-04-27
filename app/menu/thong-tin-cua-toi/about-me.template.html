@@ -1,53 +1,12 @@
 <div class="container" style="margin-top:30px" ng-controller='AboutMeCtrl'>
     <div class="row">
         <div class="col-sm-4 col-md-4 col-lg-4">
-            <h2>About Me</h2>
-            <h5>Photo of me:</h5>
-            <flex-slider ng-controller="BasicSliderCtrl" slide="s in slideshow.about_me_slides track by $index"
-                animation="slide">
-                <li>
-                    <img ng-show="{{s.active}}" ng-src="{{s.src}}">
-                </li>
-            </flex-slider>
-            <p>{{about_me.description}}</p>
-            <h3>Some Links</h3>
-            <p>Lorem ipsum dolor sit ame.</p>
-            <ul class="nav nav-pills flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-            <hr class="d-sm-none">
+            <div ng-include="'menu/thong-tin-cua-toi/sub-template/about-me-flexslider.html'"></div>
+            <span ng-include="'menu/thong-tin-cua-toi/sub-template/project-da-lam.html'"> </span>
         </div>
         <div class="col-sm-8 col-md-8 col-lg-8">
-            <ul class="list-group" ng-repeat="exp in experiences">
-                <li class="list-group-item">
-                    <h2>{{exp.exp_heading_title| uppercase}}</h2>
-                    <h5>{{exp.exp_description}}, {{exp.exp_from_time|date}} - {{exp.exp_to_time|date}}</h5>
-                    <div class="col-md-12" ng-repeat="image in exp.slider_image">
-                        <div class="thumbnail">
-                            <a ng-href="{{image.href}}">
-                                <img ng-src="{{image.src}}" alt="{{image.alt}}" style="width:100%">
-                                <div class="caption">
-                                    <p>{{image.caption}}</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <p>{{exp.exp_min_text}}</p>
-                    <p>{{exp.exp_max_text}}</p>
-                    <br>
-                </li>
-            </ul>
+            <div class="row" ng-include="'menu/thong-tin-cua-toi/sub-template/tim-kiem.html'"></div>
+            <div class="row" ng-include="'menu/thong-tin-cua-toi/sub-template/list-kinh-nghiem.html'"></div>
         </div>
     </div>
 </div>

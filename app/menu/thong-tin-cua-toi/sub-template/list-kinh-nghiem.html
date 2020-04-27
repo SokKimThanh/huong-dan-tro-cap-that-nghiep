@@ -1,0 +1,28 @@
+<div class="form-group">
+    <ul class="list-group" ng-repeat="exp in experiences | filter: query | orderBy: orderProp">
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-3">
+                    <div ng-repeat="image in exp.slider_image">
+                        <div class="thumbnail">
+                            <a class="phone-list-item" ng-href="{{exp.exp_href}}">
+                                <img ng-src="{{image.src}}" alt="{{image.alt}}" class="img-thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <h2>{{exp.exp_heading_title| uppercase}}</h2>
+                    <h5>{{exp.exp_description}}</h5>
+                    <h6>{{exp.exp_from_time|date}} - {{exp.exp_to_time|date}}</h6>
+                    <a class="btn btn-link flex-column" href="#" ng-disabled="{{exp.active_exp_min_text}}">
+                        <p>{{exp.exp_min_text}}</p>
+                    </a>
+                    <a class="btn btn-link flex-column" ng-href="{{exp.exp_href}}">
+                        <p>{{exp.exp_max_text}}</p>
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

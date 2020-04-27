@@ -1,44 +1,4 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
-}
-
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
-.menu>li {
-  display: inline;
-}
-
-.menu>li+li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.anchor {
-  border: 2px dashed DarkOrchid;
-  padding: 10px 10px 200px 10px;
-}
-
-.fixed-header {
-  background-color: rgba(0, 0, 0, 0.2);
-  height: 50px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.fixed-header>a {
-  display: inline-block;
-  margin: 5px 15px;
-}
+ body {
+     background-image: url("image/24837.jpg ");
+     background-color: #cccccc;
+ }
