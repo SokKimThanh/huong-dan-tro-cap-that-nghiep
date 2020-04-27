@@ -1,26 +1,36 @@
-.phone-list-item.ng-enter, .phone-list-item.ng-leave, .phone-list-item.ng-move {
-    transition: 0.5s linear all;
-}
+/*
+  We are using CSS transitions for when the enter and move events
+  are triggered for the element that has the `repeated-item` class
+*/
 
-.phone-list-item.ng-enter, .phone-list-item.ng-move {
-    height: 0;
+.repeated-item.ng-enter, .repeated-item.ng-move {
+    transition: all 0.5s linear;
     opacity: 0;
-    overflow: hidden;
 }
 
-.phone-list-item.ng-enter.ng-enter-active, .phone-list-item.ng-move.ng-move-active {
-    height: 120px;
+/*
+    `.ng-enter-active` and `.ng-move-active` are where the transition destination
+    properties are set so that the animation knows what to animate
+  */
+
+.repeated-item.ng-enter.ng-enter-active, .repeated-item.ng-move.ng-move-active {
     opacity: 1;
 }
 
-.phone-list-item.ng-leave {
-    opacity: 1;
-    overflow: hidden;
+/*
+    We are using CSS keyframe animations for when the `leave` event
+    is triggered for the element that has the `repeated-item` class
+  */
+
+.repeated-item.ng-leave {
+    animation: 0.5s my_animation;
 }
 
-.phone-list-item.ng-leave.ng-leave-active {
-    height: 0;
-    opacity: 0;
-    padding-bottom: 0;
-    padding-top: 0;
+@keyframes my_animation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
