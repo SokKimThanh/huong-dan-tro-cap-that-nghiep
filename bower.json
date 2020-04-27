@@ -15,14 +15,20 @@
     "tests"
   ],
   "dependencies": {
-    "angular-css": "^1.0.8"
+    "angular-css": "^1.0.8",
+    "flexslider": "^2.7.2",
+    "angular-flexslider": "^1.3.2"
   },
-  "directory": "app/components/",
+  "directory": "components",
   "timeout": 120000,
   "registry": {
     "search": [
       "http://localhost:8000",
       "https://registry.bower.io"
     ]
+  },
+  "scripts": {
+    "postinstall": "npm run copy-libs",
+    "copy-libs": "cpx \"bower_components/{angular,angular-*,html5-boilerplate/dist,bootstrap/dist,jquery/dist}/**/*\" app/lib -C"
   }
 }
