@@ -9,46 +9,23 @@
             <input type="text" class="textbox" placeholder="Your name" id="your-name" ng-model='ngModelYourName'
                 ng-change="addEventListenerKeyup()">
         </div>
-
         <div class="table-container">
-            <table border="1">
+            <table border="1" class="  table-striped   table-hover">
+                <!-- <table class="table table-striped table-inverse table-responsive">
+            <thead class="thead-inverse"> -->
                 <thead>
                     <tr>
                         <th width="200px">Variation</th>
                         <th>Result</th>
                     </tr>
+                    <!-- </thead> -->
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Number of characters</td>
-                        <td id="answer1">{{answer1}}</td>
-                    </tr>
-                    <tr>
-                        <td>First character</td>
-                        <td id="answer2">{{answer2}}</td>
-                    </tr>
-                    <tr>
-                        <td>Last character</td>
-                        <td id="answer3">{{answer3}}</td>
-                    </tr>
-                    <tr>
-                        <td>Lower case</td>
-                        <td id="answer4">{{answer4}}</td>
-                    </tr>
-                    <tr>
-                        <td>Upper case</td>
-                        <td id="answer5">{{answer5}}</td>
-                    </tr>
-                    <tr>
-                        <td>Capitalize</td>
-                        <td id="answer6">{{answer6}}</td>
-                    </tr>
-                    <tr>
-                        <td>Without leading<br>and trailing spaces</td>
-                        <td id="answer7">{{answer7}}</td>
+                    <tr ng-repeat="item in name_variations_list">
+                        <td>{{item.name_variation}}</td>
+                        <td id="{{item.id_variation}}">{{item.result_variation}}</td>
                     </tr>
                 </tbody>
             </table>
-        </div>
     </main>
 </div>
