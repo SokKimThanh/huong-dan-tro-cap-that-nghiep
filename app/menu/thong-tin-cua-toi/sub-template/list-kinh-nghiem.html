@@ -3,7 +3,7 @@
         <ul class="list-group repeated-item" ng-repeat="exp in experiences | filter: query | orderBy: orderProp">
             <li class="list-group-item">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-md-3 col-sm-12 col-lg-6">
                         <div ng-repeat="image in exp.slider_image">
                             <div class="thumbnail">
                                 <a class="phone-list-item" ng-href="{{exp.exp_href}}">
@@ -12,7 +12,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-7">
+                    <div class="col-md-7 col-sm-12 col-lg-6">
                         <h2>{{exp.exp_heading_title| uppercase}}</h2>
                         <h5>{{exp.exp_description}}</h5>
                         <h6>{{exp.exp_from_time|date}} - {{exp.exp_to_time|date}}</h6>

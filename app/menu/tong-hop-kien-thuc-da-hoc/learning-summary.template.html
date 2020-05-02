@@ -1,3 +1,54 @@
-<div class="container pt-5">
-    vao day
+<div class="container pt-5" ng-controller="LearningSummaryCtrl">
+    <nav>
+        <h1>Name variations</h1>
+    </nav>
+
+    <main>
+        <div>
+            <label class="label" for="component-name">Enter your name</label>
+            <input type="text" class="textbox" placeholder="Your name" id="your-name" ng-model='ngModelYourName'
+                ng-change="addEventListenerKeyup()">
+        </div>
+
+        <div class="table-container">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th width="200px">Variation</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Number of characters</td>
+                        <td id="answer1">{{answer1}}</td>
+                    </tr>
+                    <tr>
+                        <td>First character</td>
+                        <td id="answer2">{{answer2}}</td>
+                    </tr>
+                    <tr>
+                        <td>Last character</td>
+                        <td id="answer3">{{answer3}}</td>
+                    </tr>
+                    <tr>
+                        <td>Lower case</td>
+                        <td id="answer4">{{answer4}}</td>
+                    </tr>
+                    <tr>
+                        <td>Upper case</td>
+                        <td id="answer5">{{answer5}}</td>
+                    </tr>
+                    <tr>
+                        <td>Capitalize</td>
+                        <td id="answer6">{{answer6}}</td>
+                    </tr>
+                    <tr>
+                        <td>Without leading<br>and trailing spaces</td>
+                        <td id="answer7">{{answer7}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
 </div>
