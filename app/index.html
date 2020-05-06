@@ -20,20 +20,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark" ng-controller="myAppController">
-    <a class="navbar-brand" href="#">SKT</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav" ng-repeat="top_menu in top_menu_list">
-        <li class="{{top_menu.class}}">
-          <a class="nav-link" href="{{top_menu.href}}"
-            ng-click="gotoAnchor(top_menu.top_menu_id)">{{top_menu.top_menu_name}}</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+ 
   <!-- Jumbotron -->
   <div class="card card-image" style="background-image: url(hinhbg.jpg);">
     <div class="text-white text-center rgba-stylish-strong py-5 px-4">
@@ -48,6 +35,20 @@
       </div>
     </div>
   </div>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark" ng-controller="myAppController">
+    <a class="navbar-brand" href="#">SKT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav" ng-repeat="top_menu in top_menu_list">
+        <li class="{{top_menu.class}}">
+          <a class="nav-link" href="{{top_menu.href}}"
+            ng-click="gotoAnchor(top_menu.top_menu_id)">{{top_menu.top_menu_name}}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <div class="view-container">
     <div ng-view class="view-frame"></div>
   </div>
