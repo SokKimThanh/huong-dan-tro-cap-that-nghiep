@@ -5,6 +5,7 @@ angular.module('myApp', [
     'ngRoute',
     'ngAnimate',
     'angularCSS',
+    'myApp.mainMenu',
     'myApp.view1',
     'myApp.view2',
     'myApp.aboutMe',

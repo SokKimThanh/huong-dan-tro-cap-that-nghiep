@@ -2,5 +2,5 @@
 
 angular.module('myApp').config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
-  $routeProvider.otherwise({ redirectTo: '/thong-tin-cua-toi' });
+  $routeProvider.otherwise({ redirectTo: '/main-menu' });
 }]);

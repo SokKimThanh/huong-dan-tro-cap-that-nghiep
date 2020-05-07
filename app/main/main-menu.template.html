@@ -1,0 +1,14 @@
+<div class="container" ng-controller="MainMenuCtrl">
+    <h1>Tìm kiếm theo chủ đề</h1>
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-lg-12">
+            <ul class="press" ng-repeat="item in main_menu_list">
+                <li>
+                    <a ng-href="item.href">
+                        <img ng-src="item.src" alt="item.alt">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
