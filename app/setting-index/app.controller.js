@@ -14,7 +14,10 @@ function myAppController($rootScope, $anchorScroll, $location, $scope, $http) {
     $rootScope.myapp = {
         title: "",
         description: "",
-        href: "#",
+        href: "",
+        style: { 'background-image': "url('setting-index/image/hinhbg.jpg')" },
+        url: 'setting-index/image/hinhbg.jpg',
+        active_button: false,
     }
     $scope.gotoAnchor = function(x) {
         var newHash = 'anchor' + x;
@@ -34,5 +37,4 @@ function myAppController($rootScope, $anchorScroll, $location, $scope, $http) {
         { top_menu_id: 3, top_menu_name: "Việc cần làm trong 60 ngày", href: "view2", class: "nav-item" },
         { top_menu_id: 4, top_menu_name: "Tổng hợp kiến thức đã học", href: "tong-hop-kien-thuc-da-hoc", class: "nav-item" },
     ];
-    $scope.hinhbg = 'setting-index/image/hinhbg.jpg'
 }

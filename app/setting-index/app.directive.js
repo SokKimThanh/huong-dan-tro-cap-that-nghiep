@@ -1,4 +1,3 @@
-
 /**
  * Created by David on 25/09/2014.
  */
@@ -14,7 +13,7 @@
  * @example
  <spinner show="isLoading" class="fa fa-flash" spinner-class="fa fa-spinner fa-spin"></spinner>
  */
-angular.module("myApp").directive('spinner', ['$timeout', function ($timeout) {
+angular.module("myApp").directive('spinner', ['$timeout', function($timeout) {
     return {
         restrict: 'EA',
         template: '<ng-include src="getTemplateUrl()"/>',
@@ -25,15 +24,15 @@ angular.module("myApp").directive('spinner', ['$timeout', function ($timeout) {
             spinnerClass: '@'
         },
         replace: true,
-        link: function (scope, elm, attrs) {
+        link: function(scope, elm, attrs) {
 
             //scope.currentClass = scope.class;
 
-            scope.$watch('show', function () {
+            scope.$watch('show', function() {
                 if (scope.show) {
 
                     scope.currentClass = scope.spinnerClass;
-                    $timeout(function () {
+                    $timeout(function() {
                         //if hasn't change yet
                         if (scope.show) {
                             scope.show = false;
@@ -47,36 +46,35 @@ angular.module("myApp").directive('spinner', ['$timeout', function ($timeout) {
                 }
             });
         },
-        controller: function ($scope) {
+        controller: function($scope) {
             //function used on the ng-include to resolve the template
-            $scope.getTemplateUrl = function () {
+            $scope.getTemplateUrl = function() {
                 //basic handling
                 if ($scope.animation.animation_type == "lds-circle")
-                    return "spinner/lds-circle.html";
+                    return "setting-index/spinner/lds-circle.html";
                 if ($scope.animation.animation_type == "lds-default")
-                    return "spinner/lds-default.html";
+                    return "setting-index/spinner/lds-default.html";
                 if ($scope.animation.animation_type == "lds-dual-ring")
-                    return "spinner/lds-dual-ring.html";
+                    return "setting-index/spinner/lds-dual-ring.html";
                 if ($scope.animation.animation_type == "lds-ellipsis")
-                    return "spinner/lds-ellipsis.html";
+                    return "setting-index/spinner/lds-ellipsis.html";
                 if ($scope.animation.animation_type == "lds-facebook")
-                    return "spinner/lds-facebook.html";
+                    return "setting-index/spinner/lds-facebook.html";
                 if ($scope.animation.animation_type == "lds-grid")
-                    return "spinner/lds-grid.html";
+                    return "setting-index/spinner/lds-grid.html";
                 if ($scope.animation.animation_type == "lds-heart")
-                    return "spinner/lds-heart.html";
+                    return "setting-index/spinner/lds-heart.html";
                 if ($scope.animation.animation_type == "lds-hourglass")
-                    return "spinner/lds-hourglass.html";
+                    return "setting-index/spinner/lds-hourglass.html";
                 if ($scope.animation.animation_type == "lds-ring")
-                    return "spinner/lds-ring.html";
+                    return "setting-index/spinner/lds-ring.html";
                 if ($scope.animation.animation_type == "lds-ripple")
-                    return "spinner/lds-ripple.html";
+                    return "setting-index/spinner/lds-ripple.html";
                 if ($scope.animation.animation_type == "lds-roller")
-                    return "spinner/lds-roller.html";
+                    return "setting-index/spinner/lds-roller.html";
                 if ($scope.animation.animation_type == "lds-spinner")
-                    return "spinner/lds-spinner.html";
+                    return "setting-index/spinner/lds-spinner.html";
             }
         }
     };
-}
-]); 
+}]);

@@ -1,57 +1,53 @@
 {
-    "slider_image": [
-        {
+    "slider_image": [{
             "caption": "Diệp sinh nhật tháng 7 tháng 8",
-            "url": "menu/thong-tin-cua-toi/img/0A092C73-7D82-4AB7-B986-6A7A56EC76B1.jpg",
-            "src": "menu/thong-tin-cua-toi/img/0A092C73-7D82-4AB7-B986-6A7A56EC76B1.jpg",
+            "url": "setting-menu-navbar/thong-tin-cua-toi/img/0A092C73-7D82-4AB7-B986-6A7A56EC76B1.jpg",
+            "src": "setting-menu-navbar/thong-tin-cua-toi/img/0A092C73-7D82-4AB7-B986-6A7A56EC76B1.jpg",
             "svg": "",
             "type": "",
             "active": false
         },
         {
             "caption": "Hình AI",
-            "url": "menu/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
-            "src": "menu/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
+            "url": "setting-menu-navbar/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
+            "src": "setting-menu-navbar/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
             "svg": "",
             "type": "",
             "active": false
         },
         {
             "caption": "sokkimthanh cv photo",
-            "url": "menu/thong-tin-cua-toi/img/Sok-Kim-Thanh-CV-photo.JPG",
-            "src": "menu/thong-tin-cua-toi/img/Sok-Kim-Thanh-CV-photo.JPG",
-            "svg": "menu/thong-tin-cua-toi/img/Sok-Kim-Thanh-CV-photo.JPG",
+            "url": "setting-menu-navbar/thong-tin-cua-toi/img/Sok-Kim-Thanh-CV-photo.JPG",
+            "src": "setting-menu-navbar/thong-tin-cua-toi/img/Sok-Kim-Thanh-CV-photo.JPG",
+            "svg": "setting-menu-navbar/thong-tin-cua-toi/img/Sok-Kim-Thanh-CV-photo.JPG",
             "type": "",
             "active": true
         },
         {
             "caption": "Thông tin của thanh",
-            "url": "menu/thong-tin-cua-toi/img/sokthanhQRcode.svg",
-            "src": "menu/thong-tin-cua-toi/img/sokthanhQRcode.svg",
-            "svg": "menu/thong-tin-cua-toi/img/sokthanhQRcode.svg",
+            "url": "setting-menu-navbar/thong-tin-cua-toi/img/sokthanhQRcode.svg",
+            "src": "setting-menu-navbar/thong-tin-cua-toi/img/sokthanhQRcode.svg",
+            "svg": "setting-menu-navbar/thong-tin-cua-toi/img/sokthanhQRcode.svg",
             "type": "",
             "active": true
         },
         {
             "caption": "Team wahsis đi đaknong trông mình thật là hạnh phúc",
-            "url": "menu/thong-tin-cua-toi/img/wahsis.jpg",
-            "src": "menu/thong-tin-cua-toi/img/wahsis.jpg",
-            "svg": "menu/thong-tin-cua-toi/img/wahsis.jpg",
+            "url": "setting-menu-navbar/thong-tin-cua-toi/img/wahsis.jpg",
+            "src": "setting-menu-navbar/thong-tin-cua-toi/img/wahsis.jpg",
+            "svg": "setting-menu-navbar/thong-tin-cua-toi/img/wahsis.jpg",
             "type": "",
             "active": false
         }
     ],
-    "introduce": [
-        {
-            "name": "Sok Kim Thanh",
-            "dob": "06/04/1991",
-            "gender": "male",
-            "address": "",
-            "hobby": ""
-        }
-    ],
-    "social_link": [
-        {
+    "introduce": [{
+        "name": "Sok Kim Thanh",
+        "dob": "06/04/1991",
+        "gender": "male",
+        "address": "",
+        "hobby": ""
+    }],
+    "social_link": [{
             "name": "linkined",
             "url": "",
             "active": true

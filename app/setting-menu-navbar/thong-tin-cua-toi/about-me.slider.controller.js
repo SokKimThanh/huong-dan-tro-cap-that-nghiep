@@ -1,7 +1,7 @@
 angular.module('BasicSlider', ['angular-flexslider'])
     .controller('BasicSliderCtrl', function($scope, aboutMeFactory) {
         $scope.slideshow = {};
-        aboutMeFactory.get_json('menu/thong-tin-cua-toi/json/about_me.json').then(function success(response) {
+        aboutMeFactory.get_json('setting-menu-navbar/thong-tin-cua-toi/json/about_me.json').then(function success(response) {
             $scope.about_me = response.data;
             $scope.slideshow.about_me_slides = (function() {
                 for (let x in $scope.about_me.slider_image) {
@@ -23,7 +23,7 @@ angular.module('BasicSlider', ['angular-flexslider'])
             console.log(error);
         });
         /* experience */
-        aboutMeFactory.get_json('menu/thong-tin-cua-toi/json/experiance_list.json').then(function success(response) {
+        aboutMeFactory.get_json('setting-menu-navbar/thong-tin-cua-toi/json/experiance_list.json').then(function success(response) {
             $scope.experiences = response.data;
             $scope.slideshow = {};
             $scope.slideshow.experiences_slides = (function() {

@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('myApp.aboutMe')
-    .config(['$routeProvider', function ($routeProvider) {
+    .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/thong-tin-cua-toi', {
-            templateUrl: 'menu/thong-tin-cua-toi/about-me.template.html',
+            templateUrl: 'setting-menu-navbar/thong-tin-cua-toi/about-me.template.html',
             controller: 'AboutMeCtrl',
-            css: "menu/thong-tin-cua-toi/about-me.css"
+            css: "setting-menu-navbar/thong-tin-cua-toi/about-me.css"
         });
     }]);

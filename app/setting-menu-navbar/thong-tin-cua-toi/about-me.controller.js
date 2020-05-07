@@ -5,16 +5,19 @@ function AboutMeCtrl($http, $scope, $rootScope, aboutMeFactory) {
     $rootScope.myapp = {
         title: "Sok Kim Thanh",
         description: "Javascript framework Front-End AngularJS Developer",
+        style: { 'background-image': "url('setting-index/image/hinhbg.jpg')" },
+        url: 'setting-index/image/hinhbg.jpg',
+        active_button: true,
     };
     /* about me */
-    aboutMeFactory.get_json('menu/thong-tin-cua-toi/json/about_me.json').then(function success(response) {
+    aboutMeFactory.get_json('setting-menu-navbar/thong-tin-cua-toi/json/about_me.json').then(function success(response) {
         $scope.about_me = response.data;
     }, function error(error) {
         console.log(error);
     });
 
     /* experience */
-    aboutMeFactory.get_json('menu/thong-tin-cua-toi/json/experiance_list.json').then(function success(response) {
+    aboutMeFactory.get_json('setting-menu-navbar/thong-tin-cua-toi/json/experiance_list.json').then(function success(response) {
         $scope.experiences = response.data;
         for (var x in $scope.experiences) {
             var e = $scope.experiences[x];
@@ -26,12 +29,12 @@ function AboutMeCtrl($http, $scope, $rootScope, aboutMeFactory) {
     });
 
     /* skills */
-    aboutMeFactory.get_json('menu/thong-tin-cua-toi/json/skills_list.json').then(function success(response) {
+    aboutMeFactory.get_json('setting-menu-navbar/thong-tin-cua-toi/json/skills_list.json').then(function success(response) {
         $scope.skills = response.data;
     });
     $scope.orderProp = 'exp_to_time';
     /* projects */
-    aboutMeFactory.get_json('menu/thong-tin-cua-toi/json/projects.json').then(function success(response) {
+    aboutMeFactory.get_json('setting-menu-navbar/thong-tin-cua-toi/json/projects.json').then(function success(response) {
         $scope.projects_list = response.data;
     });
 }

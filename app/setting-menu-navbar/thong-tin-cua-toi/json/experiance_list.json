@@ -1,19 +1,16 @@
-[
-    {
+[{
         "exp_heading_title": "Gắn SVG vào trong FLEXBOX",
         "exp_description": "Chức năng Flexbox Slider",
         "exp_from_time": "2017-9-11",
         "exp_to_time": "2019-9-11",
-        "slider_image": [
-            {
-                "caption": "Kinh nghiệm sử dụng ai vẽ sơ đồ tầng",
-                "url": "menu/thong-tin-cua-toi/img/sodotang.png",
-                "src": "menu/thong-tin-cua-toi/img/sodotang.png",
-                "svg": "menu/thong-tin-cua-toi/img/sodotang.png",
-                "type": "",
-                "active": true
-            }
-        ],
+        "slider_image": [{
+            "caption": "Kinh nghiệm sử dụng ai vẽ sơ đồ tầng",
+            "url": "setting-menu-navbar/thong-tin-cua-toi/img/sodotang.png",
+            "src": "setting-menu-navbar/thong-tin-cua-toi/img/sodotang.png",
+            "svg": "setting-menu-navbar/thong-tin-cua-toi/img/sodotang.png",
+            "type": "",
+            "active": true
+        }],
         "exp_min_text": "Xem chi tiết",
         "exp_max_text": "Xem video hướng dẫn",
         "exp_href": "https://youtu.be/lDuXmPvJlnE",
@@ -25,16 +22,14 @@
         "exp_description": "Kỹ năng sử dụng AI và PHOTOSHOP",
         "exp_from_time": "2017-9-11",
         "exp_to_time": "2019-9-11",
-        "slider_image": [
-            {
-                "caption": "Hình AI",
-                "url": "menu/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
-                "src": "menu/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
-                "svg": "menu/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
-                "type": "",
-                "active": true
-            }
-        ],
+        "slider_image": [{
+            "caption": "Hình AI",
+            "url": "setting-menu-navbar/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
+            "src": "setting-menu-navbar/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
+            "svg": "setting-menu-navbar/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
+            "type": "",
+            "active": true
+        }],
         "exp_min_text": "Xem chi tiết",
         "exp_max_text": "Xem video hướng dẫn",
         "exp_href": "https://youtu.be/lDuXmPvJlnE",
@@ -46,16 +41,14 @@
         "exp_description": "Kỹ năng sử dụng bàn phím",
         "exp_from_time": "2017-9-11",
         "exp_to_time": "2020-4-26",
-        "slider_image": [
-            {
-                "caption": "Hình nhỏ chơi piano bằng bàn phím.",
-                "url": "menu/thong-tin-cua-toi/img/piano.jpg",
-                "src": "menu/thong-tin-cua-toi/img/piano.jpg",
-                "svg": "menu/thong-tin-cua-toi/img/piano.jpg",
-                "type": "",
-                "active": true
-            }
-        ],
+        "slider_image": [{
+            "caption": "Hình nhỏ chơi piano bằng bàn phím.",
+            "url": "setting-menu-navbar/thong-tin-cua-toi/img/piano.jpg",
+            "src": "setting-menu-navbar/thong-tin-cua-toi/img/piano.jpg",
+            "svg": "setting-menu-navbar/thong-tin-cua-toi/img/piano.jpg",
+            "type": "",
+            "active": true
+        }],
         "exp_min_text": "Xem chi tiết",
         "exp_max_text": "Xem video hướng dẫn",
         "exp_href": "https://youtu.be/Ze0GkGd4ZcY",
