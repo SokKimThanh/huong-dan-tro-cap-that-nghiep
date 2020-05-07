@@ -1,13 +1,12 @@
 'use strict';
 angular.module('myApp.view1').controller('View1Ctrl', ['$scope', '$rootScope', '$anchorScroll', View1Ctrl]);
-function View1Ctrl($scope, $rootScope ) {
+
+function View1Ctrl($scope, $rootScope) {
     $rootScope.myapp = {
         title: "Quy trình làm thủ tục trợ cấp thất nghiệp",
         description: "Hướng dẫn quy trình và thủ tục lấy tiền trợ cấp thất nghiệp",
-        href: "#quy-trinh-lam-thu-tuc-tro-cap-that-nghiep",
     };
-    $scope.disWork = [
-        {
+    $scope.disWork = [{
             "title": "Hỏi về điều kiện trợ cấp thất nghiệp",
             "description": "Hỏi về điều kiện trợ cấp thất nghiệp",
             "src": "setting/hoi-ve-dk-tro-cap-that-nghiep/dieu-kien-de-duoc-huong-tro-cap-that-nghiep-18621.jpg",

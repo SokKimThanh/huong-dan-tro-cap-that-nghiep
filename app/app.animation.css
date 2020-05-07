@@ -2,7 +2,8 @@
     position: relative;
 }
 
-.view-frame.ng-enter, .view-frame.ng-leave {
+.view-frame.ng-enter,
+.view-frame.ng-leave {
     background: white;
     left: 0;
     position: absolute;
@@ -54,7 +55,8 @@
 }
 
 @keyframes lds-circle {
-    0%, 100% {
+    0%,
+    100% {
         animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
     }
     0% {
@@ -88,7 +90,8 @@
     animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.lds-heart div:after, .lds-heart div:before {
+.lds-heart div:after,
+.lds-heart div:before {
     content: " ";
     position: absolute;
     display: block;
@@ -128,6 +131,7 @@
     }
 }
 
+
 /* dual ring animation spinner */
 
 .lds-dual-ring {
@@ -156,6 +160,7 @@
         transform: rotate(360deg);
     }
 }
+
 
 /* lds default spinner animation */
 
@@ -248,13 +253,17 @@
 }
 
 @keyframes lds-default {
-    0%, 20%, 80%, 100% {
+    0%,
+    20%,
+    80%,
+    100% {
         transform: scale(1);
     }
     50% {
         transform: scale(1.5);
     }
 }
+
 
 /* lds-facebook animation */
 
@@ -294,7 +303,8 @@
         top: 8px;
         height: 64px;
     }
-    50%, 100% {
+    50%,
+    100% {
         top: 24px;
         height: 32px;
     }
@@ -403,6 +413,7 @@
         transform: rotate(360deg);
     }
 }
+
 
 /* @spinner lds-ellipsis animation spinner */
 
@@ -541,13 +552,15 @@
 }
 
 @keyframes lds-grid {
-    0%, 100% {
+    0%,
+    100% {
         opacity: 1;
     }
     50% {
         opacity: 0.5;
     }
 }
+
 
 /*  */
 
@@ -711,6 +724,48 @@
         opacity: 1;
     }
     100% {
+        opacity: 0;
+    }
+}
+
+
+/*
+  We are using CSS transitions for when the enter and move events
+  are triggered for the element that has the `repeated-item` class
+*/
+
+.repeated-item.ng-enter,
+.repeated-item.ng-move {
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+
+
+/*
+    `.ng-enter-active` and `.ng-move-active` are where the transition destination
+    properties are set so that the animation knows what to animate
+  */
+
+.repeated-item.ng-enter.ng-enter-active,
+.repeated-item.ng-move.ng-move-active {
+    opacity: 1;
+}
+
+
+/*
+    We are using CSS keyframe animations for when the `leave` event
+    is triggered for the element that has the `repeated-item` class
+  */
+
+.repeated-item.ng-leave {
+    animation: 0.5s my_animation;
+}
+
+@keyframes my_animation {
+    from {
+        opacity: 1;
+    }
+    to {
         opacity: 0;
     }
 }
