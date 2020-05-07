@@ -2,8 +2,8 @@
 angular.module('myApp.mainMenu')
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/main-menu', {
-            templateUrl: 'main-menu/main-menu.template.html',
+            templateUrl: 'setting-menu-home/main-menu.template.html',
             controller: 'MainMenuCtrl',
-            css: "main-menu/main-menu.css"
+            css: "setting-menu-home/main-menu.css"
         });
     }])

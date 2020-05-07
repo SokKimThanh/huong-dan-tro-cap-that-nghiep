@@ -33,5 +33,6 @@ function myAppController($rootScope, $anchorScroll, $location, $scope, $http) {
         { top_menu_id: 2, top_menu_name: "Trợ cấp thất nghiệp", href: "view1", class: "nav-item" },
         { top_menu_id: 3, top_menu_name: "Việc cần làm trong 60 ngày", href: "view2", class: "nav-item" },
         { top_menu_id: 4, top_menu_name: "Tổng hợp kiến thức đã học", href: "tong-hop-kien-thuc-da-hoc", class: "nav-item" },
-    ]
+    ];
+    $scope.hinhbg = 'setting-index/image/hinhbg.jpg'
 }
