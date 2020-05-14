@@ -23,7 +23,8 @@
     border-bottom: 1px dashed #666;
 }
 
-.footer-about p a:hover, .footer-about p a:focus {
+.footer-about p a:hover,
+.footer-about p a:focus {
     color: #fff;
     border-color: #aaa;
 }
@@ -43,7 +44,8 @@
     border-bottom: 1px dashed #666;
 }
 
-.footer-contact p a:hover, .footer-contact p a:focus {
+.footer-contact p a:hover,
+.footer-contact p a:focus {
     color: #fff;
     border-color: #aaa;
 }
@@ -56,7 +58,8 @@
     border: 0;
 }
 
-.footer-social a:hover, .footer-social a:focus {
+.footer-social a:hover,
+.footer-social a:focus {
     color: #aaa;
     border: 0;
 }
@@ -83,10 +86,12 @@
     border: 0;
 }
 
-.footer-copyright a:hover, .footer-copyright a:focus {
+.footer-copyright a:hover,
+.footer-copyright a:focus {
     color: #aaa;
     border: 0;
 }
+
 
 /* footer navbar */
 
@@ -118,4 +123,14 @@
 .navbar-expand-md .navbar-nav .nav-link {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+a.active {
+    background: white !important;
+    color: black !important;
+}
+
+a.un-active {
+    background: grey !important;
+    color: white !important;
 }

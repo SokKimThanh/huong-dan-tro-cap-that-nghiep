@@ -1,17 +1,28 @@
 <!-- Footer -->
 <footer>
     <div class="footer-top">
+
         <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a id="changeTab1" class="nav-link text-white bg-secondary" ng-click="changeTab(1,'Music Video',$event)" href="#">Video Music</a>
+                </li>
+                <li class="nav-item">
+                    <a id="changeTab2" class="nav-link text-white bg-secondary" ng-click="changeTab(2,'Contact',$event)" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a id="changeTab3" class="nav-link text-white bg-secondary" ng-click="changeTab(3,'My address',$event)" href="#">My address</a>
+                </li>
+            </ul>
             <div class="row">
-                <div class="col-8 footer-about">
+                <div class="col-12">
                     <h3>{{myapp.title| uppercase}}</h3>
-                    <p class="text-capitalize">{{myapp.description}}</p>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YY92lC9wDfo?start=1649"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
                 </div>
-                <div class="col-4 footer-contact">
-                    <h3>Contact</h3>
+                <div class="col-12 footer-about" ng-show="current_tab==1">
+                    <p class="text-capitalize">{{myapp.description}}</p>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YY92lC9wDfo?start=1649" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-12 footer-contact" ng-show="current_tab == 2">
                     <ul class="navbar navbar-dark" ng-repeat="contact in myapp.contacts_list">
                         <li class="navbar-nav">
                             <p><i class="{{contact.class}}"></i>
@@ -21,13 +32,17 @@
                         </li>
                     </ul>
                 </div>
+                <div class="col-12 map" ng-show="current_tab==3">
+                </div>
             </div>
         </div>
     </div>
     <div class="footer-bottom">
         <div class="container">
             <pdiv class="footer-copyright">
-                <p><a href="#">{{myapp.title}} Copyright &copy;</a></p>
+                <p><a href="#">{{myapp.title}} </a></p>
+                <p>Copyright &copy;</a>
+                </p>
             </pdiv>
         </div>
     </div>
