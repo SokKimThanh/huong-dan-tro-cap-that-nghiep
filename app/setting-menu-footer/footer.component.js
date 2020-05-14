@@ -1,7 +1,7 @@
 angular.module('myApp').component('footerDetail', {
     css: "setting-menu-footer/footer.css",
     templateUrl: "setting-menu-footer/footer.html",
-    controller: function footerController($http, $scope) {
+    controller: function footerController($http, $scope, NgMap) {
         $http.get('setting-menu-footer/footer.json').then(function success(response) {
             $scope.myapp = response.data;
         }, function failed(error) { console.log(error) });
@@ -31,5 +31,11 @@ angular.module('myApp').component('footerDetail', {
         $scope.isActiveTab = function(index) {
             return index === $scope.current_tab;
         };
+        $scope.googleMapsUrl = "https://maps.googleapis.com/maps/api/js?key=AIzaSyD_YQFtQTBAvc0xPKkEStJ55SOumCkKHwY";
+        NgMap.getMap().then(function(map) {
+            console.log(map.getCenter());
+            console.log('markers', map.markers);
+            console.log('shapes', map.shapes);
+        })
     },
 })

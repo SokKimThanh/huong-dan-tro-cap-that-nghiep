@@ -33,6 +33,13 @@
                     </ul>
                 </div>
                 <div class="col-12 map" ng-show="current_tab==3">
+                    <input type="text" ng-model="$ctrl.long" ng-init="$ctrl.long = 41">
+                    <input type="text" ng-model="$ctrl.lat" ng-init="$ctrl.lat = -87">
+                    <div map-lazy-load="https://maps.google.com/maps/api/js" map-lazy-load-params="{{googleMapsUrl}}">
+                        <ng-map id="center" center="[{{$ctrl.long}},{{$ctrl.lat}}]" zoom="17" on-click="getpos($event)">
+                            <marker id="position" position="[{{$ctrl.long}},{{$ctrl.lat}}]" on-dragend="getpos($event)" animation="Animation.BOUNCE" animation="DROP" draggable="true"></marker>
+                        </ng-map>
+                    </div>
                 </div>
             </div>
         </div>
