@@ -54,5 +54,31 @@
         "exp_href": "https://youtu.be/Ze0GkGd4ZcY",
         "active_exp_min_text": true,
         "active_exp_max_text": true
+    },
+    {
+        "exp_heading_title": "Tạo bản đồ Google Map",
+        "exp_description": "Kỹ năng sử dụng directive và component",
+        "exp_from_time": "2020-5-18",
+        "exp_to_time": "2020-5-19",
+        "slider_image": [{
+            "caption": "Hình giới thiệu chức năng hiển thị google map.",
+            "url": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-19 034634.png",
+            "src": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-19 034634.png",
+            "svg": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-19 034634.png",
+            "type": "",
+            "active": true
+        }, {
+            "caption": "ng-map simplest way to show a google map.",
+            "url": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-18 215548.png",
+            "src": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-18 215548.png",
+            "svg": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-18 215548.png",
+            "type": "",
+            "active": true
+        }],
+        "exp_min_text": "Xem chi tiết",
+        "exp_max_text": "Xem video hướng dẫn",
+        "exp_href": "https://youtu.be/O7R_bOSMdS0",
+        "active_exp_min_text": true,
+        "active_exp_max_text": true
     }
 ]
