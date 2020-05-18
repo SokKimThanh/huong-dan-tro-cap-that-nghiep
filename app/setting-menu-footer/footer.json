@@ -2,8 +2,7 @@
     "title": "SOK KIM THANH",
     "description": "Javascript Front-end AngularJS Developer",
     "href": "#",
-    "contacts_list": [
-        {
+    "contacts_list": [{
             "type": "map_marker",
             "info": "21 Đường 5 Phường Phước Bình Q.9, TPHCM",
             "class": "fas fa-map-marker-alt",
