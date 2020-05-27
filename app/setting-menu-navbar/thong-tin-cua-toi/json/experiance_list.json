@@ -1,16 +1,19 @@
-[{
+[
+    {
         "exp_heading_title": "Gắn SVG vào trong FLEXBOX",
         "exp_description": "Chức năng Flexbox Slider",
         "exp_from_time": "2017-9-11",
         "exp_to_time": "2019-9-11",
-        "slider_image": [{
-            "caption": "Kinh nghiệm sử dụng ai vẽ sơ đồ tầng",
-            "url": "setting-menu-navbar/thong-tin-cua-toi/img/sodotang.png",
-            "src": "setting-menu-navbar/thong-tin-cua-toi/img/sodotang.png",
-            "svg": "setting-menu-navbar/thong-tin-cua-toi/img/sodotang.png",
-            "type": "",
-            "active": true
-        }],
+        "slider_image": [
+            {
+                "caption": "Kinh nghiệm sử dụng ai vẽ sơ đồ tầng",
+                "url": "setting-menu-navbar/thong-tin-cua-toi/img/sodotang.png",
+                "src": "setting-menu-navbar/thong-tin-cua-toi/img/sodotang.png",
+                "svg": "setting-menu-navbar/thong-tin-cua-toi/img/sodotang.png",
+                "type": "",
+                "active": true
+            }
+        ],
         "exp_min_text": "Xem chi tiết",
         "exp_max_text": "Xem video hướng dẫn",
         "exp_href": "https://youtu.be/lDuXmPvJlnE",
@@ -22,14 +25,16 @@
         "exp_description": "Kỹ năng sử dụng AI và PHOTOSHOP",
         "exp_from_time": "2017-9-11",
         "exp_to_time": "2019-9-11",
-        "slider_image": [{
-            "caption": "Hình AI",
-            "url": "setting-menu-navbar/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
-            "src": "setting-menu-navbar/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
-            "svg": "setting-menu-navbar/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
-            "type": "",
-            "active": true
-        }],
+        "slider_image": [
+            {
+                "caption": "Hình AI",
+                "url": "setting-menu-navbar/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
+                "src": "setting-menu-navbar/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
+                "svg": "setting-menu-navbar/thong-tin-cua-toi/img/image_2020_04_22T10_56_10_548Z.png",
+                "type": "",
+                "active": true
+            }
+        ],
         "exp_min_text": "Xem chi tiết",
         "exp_max_text": "Xem video hướng dẫn",
         "exp_href": "https://youtu.be/lDuXmPvJlnE",
@@ -41,14 +46,16 @@
         "exp_description": "Kỹ năng sử dụng bàn phím",
         "exp_from_time": "2017-9-11",
         "exp_to_time": "2020-4-26",
-        "slider_image": [{
-            "caption": "Hình nhỏ chơi piano bằng bàn phím.",
-            "url": "setting-menu-navbar/thong-tin-cua-toi/img/piano.jpg",
-            "src": "setting-menu-navbar/thong-tin-cua-toi/img/piano.jpg",
-            "svg": "setting-menu-navbar/thong-tin-cua-toi/img/piano.jpg",
-            "type": "",
-            "active": true
-        }],
+        "slider_image": [
+            {
+                "caption": "Hình nhỏ chơi piano bằng bàn phím.",
+                "url": "setting-menu-navbar/thong-tin-cua-toi/img/piano.jpg",
+                "src": "setting-menu-navbar/thong-tin-cua-toi/img/piano.jpg",
+                "svg": "setting-menu-navbar/thong-tin-cua-toi/img/piano.jpg",
+                "type": "",
+                "active": true
+            }
+        ],
         "exp_min_text": "Xem chi tiết",
         "exp_max_text": "Xem video hướng dẫn",
         "exp_href": "https://youtu.be/Ze0GkGd4ZcY",
@@ -60,24 +67,56 @@
         "exp_description": "Kỹ năng sử dụng directive và component",
         "exp_from_time": "2020-5-18",
         "exp_to_time": "2020-5-19",
-        "slider_image": [{
-            "caption": "Hình giới thiệu chức năng hiển thị google map.",
-            "url": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-19 034634.png",
-            "src": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-19 034634.png",
-            "svg": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-19 034634.png",
-            "type": "",
-            "active": true
-        }, {
-            "caption": "ng-map simplest way to show a google map.",
-            "url": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-18 215548.png",
-            "src": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-18 215548.png",
-            "svg": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-18 215548.png",
-            "type": "",
-            "active": true
-        }],
+        "slider_image": [
+            {
+                "caption": "Hình giới thiệu chức năng hiển thị google map.",
+                "url": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-19 034634.png",
+                "src": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-19 034634.png",
+                "svg": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-19 034634.png",
+                "type": "",
+                "active": true
+            },
+            {
+                "caption": "ng-map simplest way to show a google map.",
+                "url": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-18 215548.png",
+                "src": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-18 215548.png",
+                "svg": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-18 215548.png",
+                "type": "",
+                "active": true
+            }
+        ],
         "exp_min_text": "Xem chi tiết",
         "exp_max_text": "Xem video hướng dẫn",
         "exp_href": "https://youtu.be/O7R_bOSMdS0",
+        "active_exp_min_text": true,
+        "active_exp_max_text": true
+    },
+    {
+        "exp_heading_title": "Thực hành với cấu trúc cây",
+        "exp_description": "Kỹ năng sử dụng plug-in và đọc document",
+        "exp_from_time": "2020-5-22",
+        "exp_to_time": "2020-5-27",
+        "slider_image": [
+            {
+                "caption": "Hình giới thiệu plug-in tree-view.",
+                "url": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-27 105054.png",
+                "src": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-27 105054.png",
+                "svg": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-27 105054.png",
+                "type": "",
+                "active": true
+            },
+            {
+                "caption": "ng-map simplest way to show a google map.",
+                "url": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-27 105003.png",
+                "src": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-27 105003.png",
+                "svg": "setting-menu-navbar/thong-tin-cua-toi/img/Annotation 2020-05-27 105003.png",
+                "type": "",
+                "active": true
+            }
+        ],
+        "exp_min_text": "Xem chi tiết",
+        "exp_max_text": "Xem video hướng dẫn",
+        "exp_href": "#",
         "active_exp_min_text": true,
         "active_exp_max_text": true
     }
