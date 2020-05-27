@@ -1,0 +1,39 @@
+<div class="container" ng-controller="MainMenuCtrl">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-capitalize">Main Menu</h2>
+            <h5 class="text-capitalize">Tìm kiếm theo chủ đề</h5>
+        </div>
+        <div class="col-12">
+            <p>
+                Search:
+                <input type="text" ng-model="query" class="form-control">
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column" ng-repeat="item in main_menu_list | filter: query">
+            <div class="content">
+                <a ng-href="/#!/{{item.href}}">
+                    <img class="img-fluid img-thumbnail" ng-src="{{item.src}}" alt="{{item.alt}}">
+                    <h3 class="center">{{item.title| capitalize}}</h3>
+                    <p>{{item.description| capitalize}}</p>
+                </a>
+            </div>
+        </div>
+        <!-- END GRID -->
+    </div>
+    <div class="content">
+        <img src="{{content_story_image}}" alt="contain_story_image" style="width:100%">
+        <h3>Câu chuyện nhỏ nhỏ xinh xinh về Sok Kim Thanh</h3>
+        <p>
+            Sau hai năm làm việc miệt mài ở công ty wahsis. Cuối cùng tui cũng nghỉ việc.
+        </p>
+        <p>
+            Lý do nghỉ việc khá là thốn vì nhà khá xa. Đi làm khá mất thời gian vào khoản chạy xe.
+        </p>
+        <p>
+            Nay trước khi nghỉ việc tôi quyết tâm dồn sức vào để đúc kết lại kinh nghiệm làm việc của mình vào cái SPA này.
+        </p>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+{
+    "title": "SOK KIM THANH",
+    "description": "Javascript Front-end AngularJS Developer",
+    "href": "#",
+    "contacts_list": [{
+            "type": "map_marker",
+            "info": "21 Đường 5 Phường Phước Bình Q.9, TPHCM",
+            "class": "fas fa-map-marker-alt",
+            "src": "https://goo.gl/maps/LQRvpXBTX89hruBNA",
+            "active": true
+        },
+        {
+            "type": "phone_number",
+            "info": "+84 0924964226",
+            "class": "fas fa-mobile",
+            "src": "",
+            "active": true
+        },
+        {
+            "type": "email_address",
+            "info": "thanhsk1991@gmail.com",
+            "class": "fas fa-envelope-square",
+            "src": "",
+            "active": true
+        },
+        {
+            "type": "skype_id",
+            "info": "thanhsk1991@gmail.com",
+            "class": "fab fa-skype",
+            "src": "",
+            "active": true
+        }
+    ]
+}

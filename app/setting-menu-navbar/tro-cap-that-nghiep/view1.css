@@ -1,0 +1,26 @@
+  .base-class {
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s;
+  }
+  
+  .base-class.my-class {
+    color: red;
+    /* font-size:3em; */
+  }
+  .base-class.my-class a:link {
+    text-decoration: none;
+  }
+  
+  .base-class.my-class a:visited {
+    text-decoration: none;
+  }
+  
+  .base-class.my-class a:hover {
+    text-decoration: none;
+    color: red;
+  }
+  .imgShadow:hover { 
+     box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;
+  }

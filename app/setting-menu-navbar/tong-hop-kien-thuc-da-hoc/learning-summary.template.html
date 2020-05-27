@@ -1,0 +1,80 @@
+<div class="container pt-5" ng-controller="LearningSummaryCtrl">
+    <nav>
+        <h1>Name variations</h1>
+    </nav>
+
+    <main>
+        <div>
+            <label class="label" for="component-name">Enter your name</label>
+            <input type="text" class="textbox" placeholder="Your name" id="your-name" ng-model='ngModelYourName'
+                ng-change="addEventListenerKeyup()">
+        </div>
+        <div class="table-container">
+            <table border="1" class="table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th width="200px">Variation</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in name_variations_list">
+                        <td>{{item.name_variation}}</td>
+                        <td id="{{item.id_variation}}">{{item.result_variation}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+<div class="container pt-5" ng-controller="LearningSummaryCtrl">
+    <nav>
+        <h1>Classroom statistics</h1>
+    </nav>
+    <main>
+        <div>
+            <label class="label" for="component-name">Enter grade</label>
+            <input type="number" class="textbox" placeholder="Grade (0 and 20)" id="your-grade"
+                ng-model='ngModelYourGrade' ng-change="addEventListenerKeyup()">
+            <button type="button" class="btn btn-primary button" ng-click="click()"> Add </button>
+        </div>
+        <div class="table-container">
+            <table border="1" class="table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Lowest</th>
+                        <th>Average</th>
+                        <th>Count</th>
+                        <th>Highest</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{lowest}}</td>
+                        <td>{{average}}</td>
+                        <td>{{count}}</td>
+                        <td>{{highest}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container">
+            <table border="1" class="table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Passing</th>
+                        <th>Falling</th>
+                        <th>Raised</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{passing}}</td>
+                        <td>{{falling}}</td>
+                        <td>{{raised}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>

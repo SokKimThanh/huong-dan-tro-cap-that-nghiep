@@ -1,0 +1,74 @@
+<!-- Footer -->
+<footer>
+    <div class="footer-top">
+
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a id="changeTab1" class="nav-link text-white bg-secondary" ng-click="changeTab(1,'Music Video',$event)" href="#">Video Music</a>
+                </li>
+                <li class="nav-item">
+                    <a id="changeTab2" class="nav-link text-white bg-secondary" ng-click="changeTab(2,'Contact',$event)" href="#">Contact</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a id="changeTab3" class="nav-link text-white bg-secondary" ng-click="changeTab(3,'My address',$event)" href="#">My address</a>
+                </li> -->
+            </ul>
+            <div class="row">
+                <div class="col-12">
+                    <h3>{{myapp.title| uppercase}}</h3>
+                </div>
+                <div class="col-12 footer-about" ng-show="current_tab==1">
+                    <p class="text-capitalize">{{myapp.description}}</p>
+                    <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/YY92lC9wDfo?start=1649" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-12 footer-contact" ng-show="current_tab == 2">
+                    <ul class="navbar navbar-dark" ng-repeat="contact in myapp.contacts_list">
+                        <li class="navbar-nav">
+                            <p><i class="{{contact.class}}"></i>
+                                <a ng-href="{{contact.src}}" ng-if="contact.type=='map_marker'" ng-click="getAddress(contact.type,$event)">{{contact.info}}</a>
+                                <a ng-if="contact.type!='map_marker'">{{contact.info}}</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 col-sm-12">
+                            <div class="form-group">
+                                <label for="address">Vị trí</label>
+                                <input type="text" ng-model="$ctrl.address" class="form-control" ng-change="changeAddressMap($ctrl.address)">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 col-sm-12">
+                            <div class="form-group">
+                                <label for="latitude">Vĩ Độ</label>
+                                <input type="text" ng-model="$ctrl.lat" ng-change="loadNewLongLat($ctrl.lat,$ctrl.long)" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 col-sm-12">
+                            <div class="form-group">
+                                <label for="longitude">Kinh Độ</label>
+                                <input type="text" ng-model="$ctrl.long" ng-change="loadNewLongLat($ctrl.lat,$ctrl.long)" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div map-lazy-load="https://maps.google.com/maps/api/js" map-lazy-load-params="{{googleMapsUrl}}">
+                        <ng-map id="center" center="[{{$ctrl.lat}},{{$ctrl.long}}]" zoom="17" on-click="getpos($event)">
+                            <marker id="position" position="[{{$ctrl.lat}},{{$ctrl.long}}]" on-dragend="getpos($event)" animation="Animation.BOUNCE" animation="DROP" draggable="true"></marker>
+                        </ng-map>
+                    </div>
+                </div>
+                <!-- <div class="col-12 map" ng-show="current_tab==3">
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <pdiv class="footer-copyright">
+                <p><a href="#">{{myapp.title}} </a></p>
+                <p>Copyright &copy;</a>
+                </p>
+            </pdiv>
+        </div>
+    </div>
+</footer>

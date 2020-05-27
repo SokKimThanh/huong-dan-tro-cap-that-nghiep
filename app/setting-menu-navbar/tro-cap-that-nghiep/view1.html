@@ -1,0 +1,14 @@
+<div class="container" ng-controller="View1Ctrl">
+    <div class="row">
+        <div class="col" ng-repeat="item in disWork">
+            <h3 class="base-class" ng-class="myVar" ng-mouseover="myVar='my-class'" ng-init="myVar=''"
+                ng-mouseleave="myVar=''"><a ng-href="{{item.href}}">{{item.title}}</a>
+            </h3>
+            <p>{{item.description}} </p>
+
+            <a ng-href="{{item.href}}"><img ng-mouseover="imgShadowVar='imgShadow'" ng-init="imgShadowVar=''"
+                    ng-mouseleave="imgShadowVar=''" ng-src="{{item.src}}" alt="{{item.alt}}"
+                    ng-class="item.imgClass"></a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Javascript",
+        "years": "5",
+        "detail": [
+            {
+                "name": "Lập trình căn bản"
+            },
+            {
+                "name": "Lập trình hướng đối tượng"
+            }
+        ]
+    },
+    {
+        "name": "html5",
+        "years": "2",
+        "detail": [
+            {
+                "name": "Lập trình với svg"
+            },
+            {
+                "name": "Thiết kế web"
+            }
+        ]
+    },
+    {
+        "name": "AngularJS",
+        "years": "2",
+        "detail": [
+            {
+                "name": "Service Dependency Injection"
+            },
+            {
+                "name": "Animation SVG"
+            },
+            {
+                "name": "CRUD function API"
+            }
+        ]
+    },
+    {
+        "name": "Design",
+        "years": "2",
+        "detail": [
+            {
+                "name": "Adobe photoshop",
+                "years": "1",
+                "detail": [
+                    {
+                        "name": "chuyển file pdf sang svg"
+                    }
+                ]
+            },
+            {
+                "name": "Adobe IIlustration",
+                "years": "1",
+                "detail": [
+                    {
+                        "name": "Thiết kế SVG"
+                    }
+                ]
+            }
+        ]
+    }
+]

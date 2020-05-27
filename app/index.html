@@ -2,6 +2,7 @@
 <html lang="en" ng-app="myApp" class="no-js">
 
 <head>
+<<<<<<< HEAD
   <title>Bootstrap 4 Website Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -91,6 +92,105 @@
   <script src="core/version/version.js"></script>
   <script src="core/version/version-directive.js"></script>
   <script src="core/version/interpolate-filter.js"></script>
+=======
+    <title>Bootstrap 4 Website Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="">
+
+    <link rel="stylesheet" href="lib/normalize.css/normalize.css">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/angular-flexslider/bower_components/flexslider/flexslider.css">
+    <link rel="stylesheet" href="setting-index/app.animation.css">
+    <link rel="stylesheet" href="lib/@loadingio/transition.css/dist/transition.min.css">
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body ng-controller="myAppController">
+
+    <!-- Jumbotron -->
+    <div class="card card-image" ng-style="{{myapp.style}}">
+        <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+            <div class="py-5">
+                <!-- Content -->
+                <h5 class="h5 orange-text"><i class="fas fa-meteor"></i> SKT</h5>
+                <h2 class="card-title h2 my-4 py-2">{{myapp.title| uppercase}}</h2>
+                <p class="mb-4 pb-2 px-md-5 mx-md-5 text-capitalize">{{myapp.description}}</p>
+                <a ng-if="myapp.active_button" class=" btn btn-primary text-capitalize" ng-href="/#!/{{myapp.href}} ">
+                    <i class="fa fa-home" aria-hidden="true"></i> Main menu
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand " href="# "><i class="fa fa-home " aria-hidden="true "></i> SKT</a>
+        <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#collapsibleNavbar ">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+        <div class="collapse navbar-collapse " id="collapsibleNavbar ">
+            <ul class="navbar-nav " ng-repeat="top_menu in top_menu_list ">
+                <li class="{{top_menu.class}}">
+                    <a ng-if="myapp.active_button" class="nav-link" href="/#!/{{top_menu.href}} " ng-click="gotoAnchor(top_menu.top_menu_id) ">{{top_menu.top_menu_name}}</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="view-container ">
+        <div ng-view class="view-frame "></div>
+    </div>
+
+    <footer-detail></footer-detail>
+
+    <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js "></script>
+  -->
+    <script src="lib/angular/angular.js "></script>
+    <script src="lib/ngmap/build/scripts/ng-map.min.js"></script>
+    <script src="lib/angular-route/angular-route.js "></script>
+    <script src="lib/angular-css/angular-css.min.js "></script>
+    <script src="lib/angular-flexslider/bower_components/flexslider/jquery.flexslider.js "></script>
+    <script src="lib/angular-flexslider/angular-flexslider.js "></script>
+    <script src="lib/angular-animate/angular-animate.min.js "></script>
+
+    <script src="setting-index/app.module.js "></script>
+    <script src="setting-index/app.filter.js "></script>
+    <script src="setting-index/app.controller.js "></script>
+    <script src="setting-index/app.config.js "></script>
+    <script src="setting-index/app.directive.js "></script>
+    <script src="setting-index/app.animation.js "></script>
+    <script src="setting-menu-footer/footer.component.js "></script>
+    <script src="setting-menu-navbar/tro-cap-that-nghiep/view1.module.js "></script>
+    <script src="setting-menu-navbar/tro-cap-that-nghiep/view1.controller.js "></script>
+    <script src="setting-menu-navbar/tro-cap-that-nghiep/view1.config.js "></script>
+    <script src="setting-menu-navbar/viec-can-lam-trong-60-ngay/view2.module.js "></script>
+    <script src="setting-menu-navbar/viec-can-lam-trong-60-ngay/view2.controller.js "></script>
+    <script src="setting-menu-navbar/viec-can-lam-trong-60-ngay/view2.config.js "></script>
+    <script src="setting-menu-navbar/thong-tin-cua-toi/about-me.module.js "></script>
+    <script src="setting-menu-navbar/thong-tin-cua-toi/about-me.service.js "></script>
+    <script src="setting-menu-navbar/thong-tin-cua-toi/about-me.controller.js "></script>
+    <script src="setting-menu-navbar/thong-tin-cua-toi/about-me.config.js "></script>
+    <script src="setting-menu-navbar/thong-tin-cua-toi/about-me.slider.controller.js "></script>
+    <script src="setting-menu-navbar/tong-hop-kien-thuc-da-hoc/learning-summary.module.js "></script>
+    <script src="setting-menu-navbar/tong-hop-kien-thuc-da-hoc/learning-summary.controller.js "></script>
+    <script src="setting-menu-navbar/tong-hop-kien-thuc-da-hoc/learning-summary.config.js "></script>
+    <script src="setting-menu-navbar/tong-hop-kien-thuc-da-hoc/learning-summary.service.js "></script>
+    <!-- main menu -->
+    <script src="setting-menu-home/main-menu.module.js "></script>
+    <script src="setting-menu-home/main-menu.controller.js "></script>
+    <script src="setting-menu-home/main-menu.config.js "></script>
+    <!-- sub menu -->
+    <script src="setting-menu-submenu/hoc-1000-tu-tieng-anh-khong-can-co-gang/learning-english.module.js "></script>
+    <script src="setting-menu-submenu/hoc-1000-tu-tieng-anh-khong-can-co-gang/learning-english.controller.js "></script>
+    <script src="setting-menu-submenu/giam-can-trong-60-days/loose-weight.module.js "></script>
+    <script src="setting-menu-submenu/giam-can-trong-60-days/loose-weight.component.js "></script>
+    <script src="core/version/version.js "></script>
+    <script src="core/version/version-directive.js "></script>
+    <script src="core/version/interpolate-filter.js "></script>
+>>>>>>> 3c51e906ffc7091329b94cc4cbfdbb1cb809ae57
 </body>
 
 </html>
