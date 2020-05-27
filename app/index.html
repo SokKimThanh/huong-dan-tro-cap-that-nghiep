@@ -29,8 +29,12 @@
                 <h5 class="h5 orange-text"><i class="fas fa-meteor"></i> SKT</h5>
                 <h2 class="card-title h2 my-4 py-2">{{myapp.title| uppercase}}</h2>
                 <p class="mb-4 pb-2 px-md-5 mx-md-5 text-capitalize">{{myapp.description}}</p>
-                <a ng-if="myapp.active_button" class=" btn btn-primary text-capitalize" ng-href="/#!/{{myapp.href}}">
+                <a ng-if="myapp.active_button" class="btn btn-primary text-capitalize" ng-href="/#!/{{myapp.href}}">
                     <i class="fa fa-home" aria-hidden="true"></i> Main menu
+                </a>
+                <a ng-href="{{myapp.github}}" ng-if="!(myapp.active_button)" class="btn btn-primary text-capitalize">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    Code on GitHub
                 </a>
             </div>
         </div>

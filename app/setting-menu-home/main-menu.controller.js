@@ -9,6 +9,7 @@ function MainMenuCtrl($scope, $rootScope) {
         style: { 'background-image': "url('setting-index/image/hinhbg.jpg')" },
         url: 'setting-index/image/hinhbg.jpg',
         active_button: false,
+        github: "https://github.com/SokKimThanh/huong-dan-tro-cap-that-nghiep"
     }
     $scope.main_menu_list = [
         { id: 0, title: 'Thông tin của tôi', description: "Danh thiếp, dự án, chức năng đã làm.", src: '../setting-index/image/thongtincuatoi.png', alt: 'thongtincuatoi.png', href: 'thong-tin-cua-toi' },
