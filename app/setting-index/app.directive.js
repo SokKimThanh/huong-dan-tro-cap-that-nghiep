@@ -38,7 +38,7 @@ angular.module("myApp").directive('spinner', ['$timeout', function($timeout) {
                             scope.show = false;
                             scope.currentClass = scope.class;
                         }
-                    }, 1500);
+                    }, 500);
                 } else {
 
                     scope.show = false;
@@ -101,7 +101,7 @@ angular.module("myApp").directive('spinner', ['$timeout', function($timeout) {
                     element.remove();
                     // Clear the closed-over variable references.
                     scope = element = attributes = null;
-                }, 2500);
+                }, 3000);
             }
         );
     }
