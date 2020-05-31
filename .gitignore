@@ -6,3 +6,4 @@ app/lib/
 tmp
 .DS_Store
 .idea
+firebase/hosting.*.cache
