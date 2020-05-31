@@ -20,7 +20,7 @@
 </head>
 
 <body ng-controller="myAppController">
-
+    <spinner show="isLoading" data="{animation_type:'lds-text'}"></spinner>
     <!-- Jumbotron -->
     <div class="card card-image" ng-style="{{myapp.style}}">
         <div class="text-white text-center rgba-stylish-strong py-5 px-4">
@@ -33,8 +33,7 @@
                     <i class="fa fa-home" aria-hidden="true"></i> Main menu
                 </a>
                 <a ng-href="{{myapp.github}}" ng-if="!(myapp.active_button)" class="btn btn-primary text-capitalize">
-                    <i class="fab fa-github" aria-hidden="true"></i>
-                    Code on GitHub
+                    <i class="fab fa-github" aria-hidden="true"></i> Code on GitHub
                 </a>
             </div>
         </div>
@@ -47,8 +46,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav" ng-repeat="top_menu in top_menu_list">
                 <li class="{{top_menu.class}}">
-                    <a ng-if="myapp.active_button" class="nav-link" href="/#!/{{top_menu.href}}"
-                        ng-click="gotoAnchor(top_menu.top_menu_id)">{{top_menu.top_menu_name}}</a>
+                    <a ng-if="myapp.active_button" class="nav-link" href="/#!/{{top_menu.href}}" ng-click="gotoAnchor(top_menu.top_menu_id)">{{top_menu.top_menu_name}}</a>
                 </li>
             </ul>
         </div>

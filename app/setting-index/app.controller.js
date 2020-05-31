@@ -1,11 +1,11 @@
 'use strict';
 let myApp = angular.module('myApp');
 let ctrl = myApp.controller('myAppController', ['$rootScope', '$anchorScroll', '$location', '$scope', '$http', myAppController])
-    .run(['$anchorScroll', function ($anchorScroll) {
+    .run(['$anchorScroll', function($anchorScroll) {
         $anchorScroll.yOffset = 50; // always scroll by 50 extra pixels
     }]);
-ctrl.filter('capitalize', function () {
-    return function (input) {
+ctrl.filter('capitalize', function() {
+    return function(input) {
         return (angular.isString(input) && input.length > 0) ? input.charAt(0).toUpperCase() + input.substr(1).toLowerCase() : input;
     }
 })
@@ -18,9 +18,10 @@ function myAppController($rootScope, $anchorScroll, $location, $scope, $http) {
         style: { 'background-image': "url('setting-index/image/hinhbg.jpg')" },
         url: 'setting-index/image/hinhbg.jpg',
         active_button: false,
-        github: "https://github.com/SokKimThanh/huong-dan-tro-cap-that-nghiep"
+        github: "https://github.com/SokKimThanh/huong-dan-tro-cap-that-nghiep",
+        isLoading: true,
     }
-    $scope.gotoAnchor = function (x) {
+    $scope.gotoAnchor = function(x) {
         var newHash = 'anchor' + x;
         if ($location.hash() !== newHash) {
             // set the $location.hash to `newHash` and
